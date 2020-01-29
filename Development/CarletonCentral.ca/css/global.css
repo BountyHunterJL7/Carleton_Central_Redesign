@@ -1,0 +1,22 @@
+/**
+ GLOBAL CSS GOES HERE 
+
+ Use this file for selector reference (Classes/Id's)
+
+ For example, when creating a button, set the button's class/id to what is specified in this file
+    so that it will inherit the global style
+
+ For Selector Reference: https://www.w3schools.com/cssref/css_selectors.asp
+    
+    Classes are selected with a period. For example:
+
+        .red_button {
+            color: red;
+        }
+
+    ID's are selected with pound. For example:
+
+        #red_button {
+            color: red;
+        }
+**/
