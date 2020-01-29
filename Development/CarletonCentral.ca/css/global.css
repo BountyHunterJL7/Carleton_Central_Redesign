@@ -21,15 +21,31 @@
         }
 **/
 
-/*  */
+/* GLOBAL COLORS */
+* {
+    --main-black: black;
+    --sidenav-gray: EFF1F4;
+    --light-gray: F0F0F0;
+    --main-red: DF3742;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
+    flex: 0 auto;
     display: flex;
 }
 
 .content {
+    flex: auto;
     display: flex;
 }
 
 .footer {
+    flex:  0 auto;
     display: flex;
 }
