@@ -1,0 +1,47 @@
+.content * {
+    margin: 10px;
+}
+
+.left {
+    flex: auto;
+    display: flex;
+    margin: 0;
+    margin-right: 10px;
+    background-color: var(--sidenav-gray);
+}
+
+.middle {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.right {
+    flex: auto;
+    display: flex;
+}
+
+.middle * {
+    flex: auto;
+    display: flex;
+    margin: 10px;
+
+    border-radius: 20px;
+
+    background-color: black;
+}
+
+.middle .schedule-section {
+
+}
+
+.middle .progress-section {
+
+}
+
+.middle .amountToPay-section {
+
+}
