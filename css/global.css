@@ -23,3 +23,35 @@
             color: red;
         }
 **/
+
+/* GLOBAL COLORS */
+* {
+    --main-black: black;
+    --main-ui-front: white;
+    --sidenav-gray: EFF1F4;
+    --light-gray: F0F0F0;
+    --main-red: DF3742;
+
+    --calendar-red: E66A6B;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 0 auto;
+    display: flex;
+}
+
+.content {
+    flex: auto;
+    display: flex;
+}
+
+.footer {
+    flex: 0 auto;
+    display: flex;
+}
