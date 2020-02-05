@@ -42,8 +42,46 @@ body {
 }
 
 .header {
-    flex: 0 auto;
     display: flex;
+    height: 5em;
+    background-color: var(--main-black);
+}
+
+.header > .left {
+    width: 26em;
+    display: flex;
+}
+
+.header #header-logo {
+    margin: auto;
+    width: 16em;
+}
+
+.header > .middle {
+    justify-content: start;
+}
+
+.header a {
+    padding: .3em;
+    padding-left: .5em;
+    padding-right: .5em;
+
+    border-radius: .3em;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+    .header a:hover {
+        background-color: var(--main-red);
+    }
+
+.header > .right {
+    width: 15em;
+}
+
+.footer {
+    flex: none;
 }
 
 .content {
