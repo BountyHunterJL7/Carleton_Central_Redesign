@@ -33,6 +33,9 @@
     --main-red: DF3742;
 
     --calendar-red: E66A6B;
+
+    /* For debugging: */
+    /* border: 1px solid red; */
 }
 
 body {
@@ -55,13 +58,17 @@ body {
 .header #header-logo {
     margin: auto;
     width: 16em;
+    display: flex;
+}
+.header > .left > a {
+    margin: auto;
 }
 
 .header > .middle {
     justify-content: start;
 }
 
-.header a {
+.header > .middle > a {
     padding: .3em;
     padding-left: .5em;
     padding-right: .5em;
@@ -72,7 +79,7 @@ body {
     text-decoration: none;
     font-size: 1.4em;
 }
-    .header a:hover {
+    .header > .middle > a:hover {
         background-color: var(--main-red);
     }
 
@@ -87,6 +94,8 @@ body {
 .content {
     flex: auto;
     display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .footer {
