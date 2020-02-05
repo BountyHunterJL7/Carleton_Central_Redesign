@@ -1,47 +1,107 @@
-.content * {
-    margin: 10px;
+* {
+    /* border: 1px solid red; */
 }
 
-.left {
+.flex {
     flex: auto;
     display: flex;
+}
+
+.header {
+    flex: none;
+    height: 100px;
+
+    background-color: var(--main-black);
+}
+
+.header > .left {
+    width: 26em;
+    display: flex;
+}
+
+.header #header-logo {
+    margin: auto;
+    width: 16em;
+}
+
+.header > .right {
+    width: 15em;
+}
+
+.footer {
+    flex: none;
+}
+
+.content > .left {
     margin: 0;
-    margin-right: 10px;
     background-color: var(--sidenav-gray);
+
+    flex-direction: column;
+    flex-grow: 0;
+    padding: 3em;
+    justify-content: center;
 }
 
-.middle {
-    flex: auto;
-    display: flex;
+.content > .left > .calendar-section,
+.content > .left > .profile-section {
+    background-color: white;
+    border-radius: 1em;
+    flex: none;
+    margin-bottom: 1.5em;
+
+    box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.21);
+}
+
+.content > .left > .calendar-section {
+    width: 20em;
+    height: 20em;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content > .left > .calendar-section > .top {
+    background-color: var(--calendar-red);
+}
+
+.content > .left > .profile-section {
+    width: 20em;
+    height: 20em;
+}
+
+.content > .middle {
     flex-direction: column;
     flex-grow: 2;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
-.right {
-    flex: auto;
-    display: flex;
-}
-
-.middle * {
-    flex: auto;
-    display: flex;
+.content > .middle > * {
     margin: 10px;
 
-    border-radius: 20px;
+    border-radius: 1em;
 
-    background-color: black;
+    background-color: var(--main-ui-front);
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 }
 
-.middle .schedule-section {
-
+.content > .right {
+    flex-grow: 0;
+    padding: 3em;
+    width: 20em;
 }
 
-.middle .progress-section {
+.content > .right > .news {
+    flex-direction: column;
+    border-radius: 1em;
+    overflow: hidden;
 
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
+    padding: 0.7em;
 }
 
-.middle .amountToPay-section {
-
+.content > .right > .news > .news-header > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+    margin: 0;
 }

@@ -2,50 +2,87 @@
     <title>Carleton Central | Home</title>
 
     <!-- Link to main stylesheet -->
-    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/global.css" />
 
     <!-- Link to side stylesheet -->
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./home.css" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <!-- Header -->
-    <div class="header">
-        <p>Header goes here</p>
+    <div class="flex header">
+        <div class="left">
+            <img
+                id="header-logo"
+                src="../media/carleton_university_logo_white.png"
+            />
+        </div>
+
+        <div class="flex middle">
+            <div class="link">
+                <p>Home</p>
+            </div>
+
+            <div class="link">
+                <p>Personal Info</p>
+            </div>
+
+            <div class="link">
+                <p>Student Records</p>
+            </div>
+
+            <div class="link">
+                <p>Registration</p>
+            </div>
+
+            <div class="link">
+                <p>Awards/Financial Assistance</p>
+            </div>
+
+            <div class="link">
+                <p>MySuccess</p>
+            </div>
+
+            <div class="link">
+                <p>Housing</p>
+            </div>
+        </div>
+
+        <div class="right"></div>
     </div>
 
     <!-- Content -->
-    <div class="content">
-        <div class="left">
-
+    <div class="flex content">
+        <div class="flex left">
+            <div class="flex calendar-section">
+                <div class="flex top"></div>
+                <div class="flex bottom"></div>
+            </div>
+            <div class="flex profile-section"></div>
         </div>
 
-        <div class="middle">
-            <div class="schedule-section">
+        <div class="flex middle">
+            <div class="flex schedule-section"></div>
 
-            </div>
+            <div class="flex progress-section"></div>
 
-            <div class="progress-section">
-
-            </div>
-
-            <div class="amountToPay-section">
-                
-            </div>
+            <div class="flex amountToPay-section"></div>
         </div>
 
-        <div class=right>
-            <div class="news-section"></div>
-
-            <div class="calendar-section"></div>
+        <div class="flex right">
+            <div class="flex news">
+                <div class="news-header">
+                    <h1>News</h1>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-        <p>Footer goes here</p>
+    <div class="flex footer">
+        <!-- Footer goes here -->
     </div>
 </body>
