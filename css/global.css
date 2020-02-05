@@ -6,6 +6,9 @@
  For example, when creating a button, set the button's class/id to what is specified in this file
     so that it will inherit the global style
 
+ If we reference each colour in HTML as a class (example: ".mainColour" and then define the classes in CSS,
+ we'll be able to instantly change the colours of our website.
+
  For Selector Reference: https://www.w3schools.com/cssref/css_selectors.asp
     
     Classes are selected with a period. For example:
