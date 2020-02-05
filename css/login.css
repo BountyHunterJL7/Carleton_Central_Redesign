@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.6)
     ),
     /* bottom, image */
-    url(temp.jpg);
+    url(../media/campus_landscape_summer.jpg);
 }
 form {
 	font: normal 12pt arial !important;
