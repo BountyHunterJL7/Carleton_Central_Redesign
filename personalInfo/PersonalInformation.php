@@ -38,7 +38,6 @@
 
             <a href="../housing/housing.html">Housing</a>
         </div>
-        
 
         <div class="right"></div>
     </div>
