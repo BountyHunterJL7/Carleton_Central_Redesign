@@ -1,0 +1,91 @@
+﻿body {
+	background:  
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    /* bottom, image */
+    url(../media/campus_landscape_summer.jpg);
+}
+form {
+	font: normal 12pt arial !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+	width: 70%;
+	padding: 2% 2%;
+	margin: 1% 0;
+	display: inline-block;
+	border-radius: 5pt;
+	border: 1px solid rgb(235, 235, 235);
+	background-color: rgb(235, 235, 235);
+	box-sizing: border-box;
+}
+label {
+	padding-bottom:5%;
+}
+/* Set a style for all buttons */
+button {
+	background-color: white;
+	color: black;
+	font-size: 12pt;
+	padding: 1.5% 4%;
+	border: solid;
+	border-color: black;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+	/* Add a hover effect for buttons */
+	button:hover {
+		background-color: #CF112D;
+		color: white;
+		border-color: #CF112D;
+		
+	}
+
+.loginbutton{
+	padding:2%;
+}
+
+/* Center the logo image inside this container */
+.imgcontainer {
+	text-align: center;	
+	margin: 2% 0 1% 0;
+}
+.logo {
+	width:30%;
+	padding-bottom:5%;
+}
+
+.container {
+	text-align: center;
+
+}
+
+/* Add padding to containers */
+.loginbox {
+	text-align:center;
+	padding:2%;
+	margin-left:35%;
+	margin-right:35%;
+	margin-top:5%;
+	margin-bottom:5%;
+	background-color: white;
+}
+
+/* The "Forgot password" text */
+.paslink{
+	text-align:center;
+	margin-top:10%;
+}
+
+.reglink {
+	text-align:center;
+	margin-top:1%;
+}
