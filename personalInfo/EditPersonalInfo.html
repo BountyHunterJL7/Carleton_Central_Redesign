@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Carleton Central | Personal Information</title>
+
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- Link to side stylesheet -->
+    <link rel="stylesheet" href="">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="left">
+            <a href="../home/home.html">
+                <img
+                    id="header-logo"
+                    src="../media/carleton_university_logo_white.png"
+                />
+            </a>
+        </div>
+
+        <div class="flex middle">
+            <a href="../personalInfo/personalInformation.php">Personal Info</a>
+
+            <a href="../studentRecords/studentRecords.html">Student Records</a>
+
+            <a href="../registration/registration.html">Registration</a>
+
+            <a href="../awards/awards.html">Awards/Financial Assistance</a>
+
+            <a href="../my-success/mysuccess.html">MySuccess</a>
+
+            <a href="../housing/housing.html">Housing</a>
+        </div>
+
+        <div class="right"></div>
+    </div>
+    <div>    
+        <form method="POST" action="PersonalInformation.php">
+        <label for="address"><b>Your Address</b></label>
+        <input type="text" id="address" name="address" />
+    </div>
+    <input type="submit" />
+</form>
+</body>
+</html>
