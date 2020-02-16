@@ -1,4 +1,4 @@
-CREATE DATABASE CCRDatabase;
+CREATE DATABASE CCdata;
 
 CREATE TABLE student (
 studentID int NOT NULL,
