@@ -19,10 +19,7 @@
     <div class="header">
         <div class="left">
             <a href="../home/index.html">
-                <img
-                    id="header-logo"
-                    src="../media/carleton_university_logo_white.png"
-                />
+                <img id="header-logo" src="../media/carleton_university_logo_white.png" />
             </a>
         </div>
 
@@ -45,43 +42,53 @@
 
 
     <!-- Content -->
-    <div>
+    <div class="content">
         <h1>
             Student Records
         </h1>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        </p>
-
         <!-- List of options -->
-        <ul>
-            <li>
-                <h3>Support Services<h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-                <button type="button">View</button>
-            </li>
 
-            <li><h3>Admissions</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-                <button type="button">View</button>
-            </li>
+        <!-- Changing from a list to a set of divs because I think it will be easier to implement the CSS that way. Like give them each a class of "card" and id of "left", "middle", or "right" -->
 
-            <li><h3>MyGrades</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-                <button type="button">View</button>
-            </li>
-        </ul>
+        <div>
+            <h2>
+                Support Services
+            </h2>
+            <p>
+                Manage your academic and non-academic support services.
+            </p>
+            <button type="button">View</button>
+        </div>
 
-        
+        <div>
+            <h2>
+                Admissions
+            </h2>
+            <p>
+                View and manage your applications and offers.
+            </p>
+            <button type="button">View</button>
+        </div>
+
+        <div>
+            <h2>
+                MyGrades
+            </h2>
+            <p>
+                View your final grades for a selected term.
+            </p>
+            <button type="button">View</button>
+        </div>
+
     </div>
     <!-- End of Content -->
-    
+
     <!-- Footer -->
     <div>
 
 
     </div>
     <!-- End of Footer -->
-    
+
 </body>
