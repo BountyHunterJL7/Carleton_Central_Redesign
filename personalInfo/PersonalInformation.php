@@ -27,7 +27,7 @@
         </div>
 
         <div class="flex middle">
-            <a href="../personalInfo/personalInformation.php">Personal Info</a>
+            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php">Personal Info</a>
 
             <a href="../studentRecords/studentRecords.html">Student Records</a>
 
