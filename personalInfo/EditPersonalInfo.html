@@ -26,7 +26,7 @@
         </div>
 
         <div class="flex middle">
-            <a href="../personalInfo/personalInformation.php">Personal Info</a>
+            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php">Personal Info</a>
 
             <a href="../studentRecords/studentRecords.html">Student Records</a>
 
@@ -41,12 +41,18 @@
 
         <div class="right"></div>
     </div>
-    <div>    
-        <form method="POST" action="PersonalInformation.php">
-        <label for="address"><b>Your Address</b></label>
-        <input type="text" id="address" name="address" />
-    </div>
-    <input type="submit" />
-</form>
+    <form method="POST" action="PersonalInformation.php">
+        <div>    
+            <label for="address"><b>Your Phone Number</b></label>
+            <input type="number" id="phoneNumber" name="phoneNumber" />
+
+            <label for="address"><b>Your Address</b></label>
+            <input type="text" id="address" name="address" />
+
+            <label for="address"><b>Your Postal Code</b></label>
+            <input type="text" id="postalCode" name="postalCode" />
+        </div>
+        <input type="submit" />
+    </form>
 </body>
 </html>

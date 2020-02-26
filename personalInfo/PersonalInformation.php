@@ -73,14 +73,18 @@
             <div>
                 <input type="text" value="Name" readonly><br><br>
                 <input type="text" value="Email" readonly><br><br>
-                <input type="text" for="adress" value="Phone Number" readonly><br><br>
-                <input type="text" value="
-                <?php
+
+                <input type="text" for="adress" value="<?php
+                echo $_REQUEST["phoneNumber"];
+                ?> " readonly><br><br>
+
+                <input type="text" value="<?php
                 echo $_REQUEST["address"];
-                ?> " 
-                readonly><br><br>
+                ?> " readonly><br><br>
                  
-                <input type="text" value="Postal Code" readonly><br><br>
+                <input type="text" value="<?php
+                echo $_REQUEST["postalCode"];
+                ?> " readonly><br><br>
                 
                 <input type="text" value="Your SIN number is on record" readonly><br><br>
                 <form action="EditPersonalInfo.html">
