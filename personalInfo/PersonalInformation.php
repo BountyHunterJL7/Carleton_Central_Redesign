@@ -29,15 +29,15 @@
         <div class="flex middle">
             <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php">Personal Info</a>
 
-            <a href="../studentRecords/studentRecords.html">Student Records</a>
+            <a href="https://bettercarletoncentral.com/studentrecords/studentrecords">Student Records</a>
 
-            <a href="../registration/registration.html">Registration</a>
+            <a href="https://bettercarletoncentral.com/registration/registration">Registration</a>
 
-            <a href="../awards/awards.html">Awards/Financial Assistance</a>
+            <a href="https://bettercarletoncentral.com/awards/awards">Awards/Financial Assistance</a>
 
-            <a href="../my-success/mysuccess.html">MySuccess</a>
+            <a href="https://bettercarletoncentral.com/my-success/mysuccess">MySuccess</a>
 
-            <a href="../housing/housing.html">Housing</a>
+            <a href="https://bettercarletoncentral.com/housing/housing">Housing</a>
         </div>
 
         <div class="right"></div>
