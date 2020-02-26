@@ -42,64 +42,97 @@
 
         <div class="right"></div>
     </div>
-    <div class="info">
-        <div>
-            <h1>Your Information</h1>
+
+
+
+    <div id="Wrapper">
+        <div class="campusCard">
+            <h1 class="cardTitle">Campus Card</h1>
+            <p>Lorum Ipsum type beat</p><br>
+            <div class="linkBox">
+                <img
+                        id="raven-logo"
+                        src="../media/campus-card.png"
+                />
+                <h3>Carleton Central</h3>
+                <p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+                <div class="viewButton">
+                    <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
+                </div>
+                
+            </div>
         </div>
+        <div class="info">
+    <div class="titleText">
+        <h1>Student Information</h1>
+        <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+    </div>
+    <div>
         <div>
+            <p>Personal Information</p>
             <div>
-                <h2>Your Name</h2>
-                <p>To change your legal name or perferred first name visit the registrars office (300 Tory Building - 8:30 to 4:30 Monday to Friday)</p>
+                <input type="text" value="Name" readonly><br><br>
+                <input type="text" value="Email" readonly><br><br>
+                <input type="text" for="adress" value="Phone Number" readonly><br><br>
+                <input type="text" value="
                 <?php
-                echo "<h3>" . $_REQUEST["address"] . "</h3>";
-                ?>   
-                <div>
-            <p>MyCarletonOne Account information and email</p>
-            <p>To change your MyCarletonOne Account information visit </p><a href="https://myone.carleton.ca">myone.carleton.ca</a>
-            </div>
-            <div>
-                <p>Your SIN number is on Record</p>
-                <p>To change your SIN number contact student_accounts@carleton.ca</p>
-            </div>
-            <form action="EditPersonalInfo.html">
-                    <input type="submit" value="Edit Address" />
-                </form>
-            <a href="#">Trevel Regestry</a>
-            <div>
-            <a href="https://wcc.carleton.ca/student/welcome.php">Campus Card</a>
+                echo $_REQUEST["address"];
+                ?> " 
+                readonly><br><br>
+                 
+                <input type="text" value="Postal Code" readonly><br><br>
+                
+                <input type="text" value="Your SIN number is on record" readonly><br><br>
+                <form action="EditPersonalInfo.html">
+                <input type="submit" value="Edit" />
+                </form><br>
             </div>
 
-            </div>
-                <h1>Emergency Contact Information</h1>
+            <div>
+                <p>Emergency Contact</p>
+                <div>
+                    <input type="text" for="contactName" value="<?php
+                    echo $_REQUEST["contactName"];
+                    ?>" readonly></input><br><br>
+                    
+                    <input type="text" for="ContactRelationship" value="<?php
+                    echo $_REQUEST["contactRelationship"];
+                    ?>" readonly></input><br><br>
+                    
+                    <input type="text" for="contactNumber" value="<?php
+                    echo $_REQUEST["contactNumber"];
+                    ?>" readonly></input><br><br>
+                    
+                    <input type="text" for="contactAddress" value="<?php
+                    echo $_REQUEST["contactAddress"];
+                    ?>" readonly></input><br><br>
+                    
+                    <input type="text" for="contactCountry" value="<?php
+                    echo $_REQUEST["contactCountry"];
+                    ?>" readonly></input><br><br>
+                    
+                    <input type="text" for="contactPostalCode" value="<?php
+                    echo $_REQUEST["contactPostalCode"];
+                    ?>" readonly></input><br><br>
+                    
+                    
+                    
+                </div>
                 <form action="EditInfo.html">
                     <input type="submit" value="Edit" />
-                </form>
-                <input type="text" for="contactName" readonly></input><br><br>
-                <?php
-                echo "<h3>" . $_REQUEST["contactName"] . "</h3>";
-                ?>
-                <div>
-                <input type="text" for="contactAddress" readonly></input><br><br>
-                    <?php
-                    echo "<h3>" . $_REQUEST["contactNumber"] . "</h3>";
-                    ?>
-                     <input type="text" for="contactAddress" readonly></input><br><br>
-                    <?php
-                    echo "<h3>" . $_REQUEST["contactAddress"] . "</h3>";
-                    ?>
-                    <?php
-                    echo "<h3>" . $_REQUEST["contactPostalCode"] . "</h3>";
-                    ?>
-                    <?php
-                    echo "<h3>" . $_REQUEST["contactCountry"] . "</h3>";
-                    ?>
-                     <input type="text" for="ContactRelationship" readonly></input><br><br>
-                    <?php
-                    echo "<h3>" . $_REQUEST["contactRelationship"] . "</h3>";
-                    ?>
-                </div>
-            <div>
-        </div>
+                </form><br>
+            </div>
+
+            <div class="otherInfo">
+                <p>Other Information</div>
+                <p>To change your legal name or perferred first name visit the registrars office (300 Tory Building - 8:30 to 4:30 Monday to Friday)</p>
+                <p>To change your MyCarletonOne Account information visit </p><a href="https://myone.carleton.ca">myone.carleton.ca</a>
+                <p>To change your SIN number contact student_accounts@carleton.ca</p>
+                <a href="#">Trevel Regestry</a>
+            </div>
+        <div>
+    </div>
+</div>
     </div>
 </body>
 </html>
