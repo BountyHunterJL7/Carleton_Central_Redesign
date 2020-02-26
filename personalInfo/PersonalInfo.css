@@ -1,0 +1,72 @@
+body{
+    font: normal 12pt arial !important;
+    color:black;
+    background-color:white;
+}
+
+#raven-logo{
+    width:50%;
+}
+
+.campusCard{
+    background-Color:#f0f0f0;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-top:7%;
+    padding-bottom:100%;
+    text-align:center;
+    width:18%;
+    float:left;
+    
+}
+
+.linkBox{
+background-color: white;
+border-radius: 10pt;
+padding:4%;
+position: relative;
+box-shadow: 0px 0px 8px #b8b8b8;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #CF112D;
+	color: white;
+    font-size: 14pt;
+    font-weight: bold;
+	padding: 1.5% 10%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+	/* Add a hover effect for buttons */
+	button:hover {
+		background-color: rgb(160, 15, 36);
+		color: white;
+		
+    }
+    
+.titleText{
+text-align:center;
+padding-top:8%;
+padding-bottom:4%;
+}
+
+.info{
+color:black;
+background-color:white;
+margin-right:0%;
+margin-left: 13%;
+
+float:left;
+}
+
+input[type=text] {
+    color:black;
+    border: none;
+    border-bottom: 1pt solid rgb(119, 119, 119);
+    width:100%;
+  }
