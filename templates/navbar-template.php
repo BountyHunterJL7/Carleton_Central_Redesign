@@ -106,7 +106,7 @@ echo '
 	</style>
 
 	<div class="left">
-            <a href="../home/index.php">
+            <a href="../home/home.php">
                 <img
                     id="header-logo"
                     src="../media/carleton_university_logo_white.png"
