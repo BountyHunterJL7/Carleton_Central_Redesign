@@ -15,33 +15,11 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="left">
-            <a href="../home/index.html">
-                <img
-                    id="header-logo"
-                    src="../media/carleton_university_logo_white.png"
-                />
-            </a>
-        </div>
-
-        <div class="flex middle">
-            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php">Personal Info</a>
-
-            <a href="../studentRecords/studentRecords.html">Student Records</a>
-
-            <a href="../registration/registration.html">Registration</a>
-
-            <a href="../awards/awards.html">Awards/Financial Assistance</a>
-
-            <a href="../my-success/mysuccess.html">MySuccess</a>
-
-            <a href="../housing/housing.html">Housing</a>
-        </div>
-
-        <div class="right"></div>
+    <!-- Navbar -->
+    <div class="navbar">
+        <?php include '../templates/navbar-template.php' ?>
     </div>
+    <!-- End of Navbar -->
 
     <!-- Nav Sidebar -->
     <div>

@@ -44,7 +44,6 @@ body {
 	flex-direction: column;
 }
 
-.header,
 .navbar {
 	display: flex;
 	height: 5em;

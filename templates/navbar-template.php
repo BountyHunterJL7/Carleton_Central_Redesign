@@ -52,11 +52,11 @@ echo '
 		<a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInformation.php"
 			>Personal Info</a
 		>
-		<a href="../studentRecords/studentRecords.html">Student Records</a>
-		<a href="../registration/registration.html">Registration</a>
-		<a href="../awards/awards.html">Awards/Financial Assistance</a>
-		<a href="../my-success/mysuccess.html">MySuccess</a>
-		<a href="../housing/housing.html">Housing</a>
+		<a href="../studentRecords/studentRecords.php">Student Records</a>
+		<a href="../registration/registration.php">Registration</a>
+		<a href="../awards/awards.php">Awards/Financial Assistance</a>
+		<a href="../my-success/mysuccess.php">MySuccess</a>
+		<a href="../housing/housing.php">Housing</a>
 	</div>
 
 	<div class="right"></div>
