@@ -44,6 +44,10 @@
 				<div class="news-header">
 					<h1>News</h1>
 				</div>
+
+				<ul class="news-list flex">
+					<?php include '../templates/news-items.php' ?>
+				</ul>
 			</div>
 		</div>
 	</div>
