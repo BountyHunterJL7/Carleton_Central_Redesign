@@ -1,0 +1,64 @@
+body{
+    font: normal 12pt arial !important;
+    color:black;
+    background-color:white;
+}
+
+#wrapper{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 20pt;
+}
+
+form{
+    width:40%;
+    display: inline-block;
+}
+
+label{
+    float:left;
+    padding-top: 2%;
+}
+
+input[type=text] {
+    color:black;
+    font-size: 14pt;
+    border: none;
+    border-bottom: 1pt solid rgb(119, 119, 119);
+    width:100%;
+    padding-top:3%;
+  }
+
+  input[type=number] {
+    color:black;
+    font-size: 14pt;
+    border: none;
+    border-bottom: 1pt solid rgb(119, 119, 119);
+    width:100%;
+    padding-top:3%;
+  }
+
+  /* Set a style for all buttons */
+  input[type=submit] {
+	background-color: #CF112D;
+	color: white;
+    font-size: 14pt;
+    font-weight: lighter;
+	padding: 1.5% 10%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+    transition: 0.2s;
+    margin-top:3%;
+}
+
+	/* Add a hover effect for buttons */
+	input[type=submit]:hover {
+		background-color: rgb(160, 15, 36);
+		color: white;
+		
+    }
