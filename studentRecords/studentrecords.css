@@ -1,0 +1,82 @@
+body{
+    font: normal 12pt arial !important;
+    color:black;
+    background-color:white;
+}
+
+#raven-logo{
+    width:30%;
+    padding-bottom:3%;
+}
+
+button {
+    margin-top:5%;
+	background-color: #e6e6e6;
+	color: black;
+    font-size: 14pt;
+    font-weight: lighter;
+	padding: 1.5% 10%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    background-color: rgb(202, 202, 202);    
+}
+
+.content{
+    text-align: center;
+    margin-top:4%;
+}
+
+#wrapper{
+    margin-top:4%;
+    display: flex;
+    justify-content: center; 
+}
+
+.support{
+    margin:1%;
+    background-Color:white;
+    padding-left: 1%;
+    padding-right:1%;
+    padding-top:1%;
+    padding-bottom:1%;
+    text-align:center;
+    width:15%;
+    float:left;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 8px #b8b8b8;
+}
+
+.admissions{
+    margin:1%;
+    background-Color:white;
+    padding-left: 1%;
+    padding-right:1%;
+    padding-top:1%;
+    padding-bottom:1%;
+    text-align:center;
+    width:15%;
+    float:left;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 8px #b8b8b8;
+}
+
+.grades{
+    margin:1%;
+    background-Color:white;
+    padding-left: 1%;
+    padding-right:1%;
+    padding-top:1%;
+    padding-bottom:1%;
+    text-align:center;
+    width:15%;
+    float:left;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 8px #b8b8b8;
+}
