@@ -1,60 +1,67 @@
-.content { 
-    flex-direction: row;
+.content {
+	flex-direction: row;
 }
 
 .content > .left {
-    margin: 0;
-    background-color: var(--sidenav-gray);
+	margin: 0;
+	background-color: var(--sidenav-gray);
 
-    flex-direction: column;
-    flex-grow: 0;
-    padding: 3em;
-    justify-content: center;
+	flex-direction: column;
+	flex-grow: 0;
+	padding: 3em;
+	justify-content: center;
 }
 
 .content > .left > .calendar-section,
 .content > .left > .profile-section {
-    background-color: white;
-    flex: none;
-    margin-bottom: 1.5em;
+	background-color: white;
+	flex: none;
+	margin-bottom: 1.5em;
 }
 
 .content > .left > .calendar-section {
-    width: 20em;
-    height: 20em;
-    flex-direction: column;
-    overflow: hidden;
+	width: 20em;
+	height: 20em;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 .content > .left > .calendar-section > .top {
-    background-color: var(--calendar-red);
+	background-color: var(--calendar-red);
 }
 
 .content > .left > .profile-section {
-    width: 20em;
-    height: 20em;
+	width: 20em;
+	height: 20em;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content > .left > .profile-section > #profile-image {
+	margin: auto;
 }
 
 .content > .middle {
-    flex-direction: column;
-    flex-grow: 2;
+	flex-direction: column;
+	flex-grow: 2;
 }
 
 .content > .middle > * {
-    margin: 10px;
+	margin: 10px;
 
-    background-color: var(--main-ui-front);
+	background-color: var(--main-ui-front);
 }
 
 .content > .right {
-    flex-grow: 0;
-    padding: 3em;
-    width: 20em;
+	flex-grow: 0;
+	padding: 3em;
+	width: 20em;
 }
 
 .content > .right > .news {
-    flex-direction: column;
-    overflow: hidden;
+	flex-direction: column;
+	overflow: hidden;
 
-    padding: 0.7em;
+	padding: 0.7em;
 }
