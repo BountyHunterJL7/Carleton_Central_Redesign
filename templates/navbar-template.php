@@ -1,5 +1,5 @@
 <?php
-echo `
+echo '
 	<style>
 	.navbar {
 		display: flex;
@@ -49,7 +49,7 @@ echo `
 		width: 2em;
 	}
 	
-	/* Over 1024px, we don't want the hamburger icon to appear */
+	/* Over 1024px, we dont want the hamburger icon to appear */
 	.icon {
 		display: none;
 	}
@@ -128,8 +128,8 @@ echo `
             <a href="" class="topNav">Logout</a>
         </div>
 
-        <div class='right'>
-            <a href='javascript:void(0);' class="icon" onclick="header()">
+        <div class="right">
+            <a href="javascript:void(0);" class="icon" onclick="header()">
                 <i class="fa fa-bars fa-2x" id="hamburgerButton" style="color:#fff;"></i>
                 <i class="fa fa-times fa-2x" id="xButton" style="color:#fff; display: none;"></i>
             </a>
@@ -140,7 +140,7 @@ echo `
 	function header() {
 
 		//Find all the navigation buttons and store them in a variable
-		var navElements = document.querySelectorAll('.topNav');
+		var navElements = document.querySelectorAll(".topNav");
 	
 		//Find the div that encompasses the navigation
 		var navDiv = document.getElementById("navigationDiv");
@@ -152,7 +152,7 @@ echo `
 		//Loop through the elements of navigation when the user clicks on the hamburger menu
 		for (var i = 0 ; i < navElements.length ; i++) {
 	
-			//If the nav elements don't have the "after click" class, apply it
+			//If the nav elements dont have the "after click" class, apply it
 			//This class contains styling rules that apply to the mobile view
 			if (navElements[i].className === "topNav") {
 				navElements[i].className += " afterClick";
@@ -179,4 +179,4 @@ echo `
 	//End of function header
 	
 	</script>
-`;
+';
