@@ -13,7 +13,7 @@
 <body>
 	<!-- Header -->
 	<div class="navbar">
-		<?php include '../templates/navbar-template.php' ?>
+		<?php include '../templates/navbar.php' ?>
 	</div>
 
 	<!-- Content -->

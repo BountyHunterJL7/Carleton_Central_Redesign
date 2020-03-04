@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <?php include '../templates/navbar-template.php' ?>
+        <?php include '../templates/navbar.php' ?>
     </div>
     <!-- End of Navbar -->
 
