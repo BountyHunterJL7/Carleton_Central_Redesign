@@ -64,7 +64,7 @@
                 ?> " readonly><br><br>
                 
                 <input type="text" value="Your SIN number is on record" readonly><br><br>
-                <form action="EditPersonalInfo.html">
+                <form action="EditPersonalInfo.php">
                 <input type="submit" value="Edit" />
                 </form><br>
             </div>
@@ -99,7 +99,7 @@
                     
                     
                 </div>
-                <form action="EditInfo.html">
+                <form action="EditInfo.php">
                     <input type="submit" value="Edit" />
                 </form><br>
             </div>
