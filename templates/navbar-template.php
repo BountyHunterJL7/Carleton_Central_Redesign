@@ -1,5 +1,7 @@
 <?php
 echo '
+	<script src="https://use.fontawesome.com/7f0bcd1195.js"></script>
+
 	<style>
 	.navbar {
 		display: flex;
@@ -179,4 +181,6 @@ echo '
 	//End of function header
 	
 	</script>
+
+	
 ';
