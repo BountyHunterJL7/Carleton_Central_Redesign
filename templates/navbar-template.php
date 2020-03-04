@@ -106,7 +106,7 @@ echo '
 	</style>
 
 	<div class="left">
-            <a href="../home/index.html">
+            <a href="../home/index.php">
                 <img
                     id="header-logo"
                     src="../media/carleton_university_logo_white.png"
@@ -117,15 +117,15 @@ echo '
         <div class="flex middle" id="navigationDiv">
             <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInformation.php" class="topNav">Personal Info</a>
 
-            <a href="../studentRecords/studentRecords.html" class="topNav">Student Records</a>
+            <a href="../studentRecords/studentRecords.php" class="topNav">Student Records</a>
 
-            <a href="../registration/registration.html" class="topNav">Registration</a>
+            <a href="../registration/registration.php" class="topNav">Registration</a>
 
-            <a href="../awards/awards.html" class="topNav">Awards/Financial Assistance</a>
+            <a href="../awards/awards.php" class="topNav">Awards/Financial Assistance</a>
 
-            <a href="../my-success/mysuccess.html" class="topNav">MySuccess</a>
+            <a href="../my-success/mysuccess.php" class="topNav">MySuccess</a>
 
-            <a href="../housing/housing.html" class="topNav">Housing</a>
+            <a href="../housing/housing.php" class="topNav">Housing</a>
 
             <a href="" class="topNav">Logout</a>
         </div>
