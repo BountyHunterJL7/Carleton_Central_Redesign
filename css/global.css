@@ -44,52 +44,6 @@ body {
 	flex-direction: column;
 }
 
-.navbar {
-	display: flex;
-	height: 5em;
-	background-color: var(--main-black);
-}
-
-.navbar > .left {
-	width: 26em;
-	display: flex;
-}
-
-.navbar #navbar-logo {
-	margin: auto;
-	width: 16em;
-	display: flex;
-}
-
-.navbar > .left > a {
-	margin: auto;
-	flex: auto;
-	display: flex;
-}
-
-.navbar > .middle {
-	justify-content: start;
-}
-
-.navbar > .middle > a {
-	padding: 0.3em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-
-	border-radius: 0.3em;
-	margin: auto;
-	color: white;
-	text-decoration: none;
-	font-size: 1.4em;
-}
-.navbar > .middle > a:hover {
-	background-color: var(--main-red);
-}
-
-.navbar > .right {
-	width: 15em;
-}
-
 .footer {
 	background-color: var(--main-black);
 	flex: none;
