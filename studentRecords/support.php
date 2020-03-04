@@ -79,15 +79,15 @@
         <div class="wrapper">
             <div class="links">
                 <img id="raven-logo" src="../media/mySuccess.png"/>
-                <button class="view" type="button">MySuccess Portal</button>
+                <button onclick="window.location.href = 'https://mycareer.carleton.ca/home.htm';" class="view" type="button">MySuccess Portal</button>
             </div>
             <div class="links">
                 <img id="raven-logo" src="../media/pmc.png"/>
-                <button class="view" type="button">MyPMC</button>
+                <button onclick="window.location.href = 'https://carleton.ca/pmc/';" class="view" type="button">MyPMC</button>
             </div>
             <div class="links">
                 <img id="raven-logo" src="../media/academic-support.png"/>
-                <button class="view" type="button">Academic Advising Centre</button>
+                <button onclick="window.location.href = 'https://carleton.ca/academicadvising/';" class="view" type="button">Academic Advising Centre</button>
             </div>
         </div>
     </div>
