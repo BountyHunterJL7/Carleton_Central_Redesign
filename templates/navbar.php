@@ -6,6 +6,7 @@ echo '
 	.navbar {
 		display: flex;
 		height: 5em;
+		margin:0;
 		background-color: var(--main-black);
 	}
 	

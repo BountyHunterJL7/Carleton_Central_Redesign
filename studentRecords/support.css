@@ -1,0 +1,62 @@
+body{
+    font: normal 12pt arial !important;
+    color:black;
+    background-color:white;
+}
+
+#hero-text {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-weight: bold;
+    font-size: 3vw;
+}#hero-text span {
+    color:black;
+    background:white;
+ }
+ 
+
+.container{
+    margin-top:4%;
+    text-align: center;
+}
+
+.wrapper{
+    margin-top:7%;
+    display: flex;
+    justify-content: center; 
+}
+
+.links{
+    width:25%;
+    height: 20%;
+    float:left;
+    margin-bottom:10%;
+}
+
+#raven-logo{
+    width:60%;
+    padding-bottom:3%;
+}
+
+.view {
+    margin-top:5%;
+	background-color: #e6e6e6;
+	color: black;
+    font-size: 14pt;
+    font-weight: lighter;
+	padding: 3% 10%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+/* Add a hover effect for buttons */
+.view:hover {
+    background-color: rgb(202, 202, 202);    
+}
