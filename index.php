@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
 
     <!-- Page icon -->
-    <link rel="shortcut icon" href="../media/carleton_mini_logo.png">
+    <link rel="shortcut icon" href="./media/carleton_mini_logo.png">
 
     <meta charset="utf-8" />
 </head>
