@@ -45,12 +45,59 @@
 .content > .middle {
 	flex-direction: column;
 	flex-grow: 2;
+	padding: 3em 0 3em 3em;
 }
 
-.content > .middle > * {
-	margin: 10px;
+.timetable-section {
+	/* CREDIT: https://unsplash.com/photos/FoKO4DpXamQ */
+	background-image: url("../media/home/bg_student_timetable.jpg");
+}
 
+.progress-section {
+	/* CREDIT: https://unsplash.com/photos/F8t2VGnI47I */
+	background-image: url("../media/home/bg_academic_progress.jpg");
+}
+
+.amountToPay-section {
+	/* CREDIT: https://unsplash.com/photos/3-Tc_5LROrM */
+	background-image: url("../media/home/bg_amount_to_pay.jpg");
+}
+
+.section .button {
+	flex: 0 1 auto;
+	align-self: flex-end;
+	text-align: center;
+	margin: 0 auto 3em auto;
+
+	background-color: white;
+	padding: .5em 1.5em .5em 1.5em;
+	border-radius: 5em;
+}
+
+.section .button h1 {
+	font-size: 2em;
+}
+
+.section:first-child {
+	margin-top: 0;
+}
+
+.section:last-child {
+	margin-bottom: 0;
+}
+
+.section {
+	object-fit: cover;
+	background-size: 100%;
+	object-position: 50%;
+	/* opacity: .5; */
+	cursor: pointer;
+	margin: 10px;
 	background-color: var(--main-ui-front);
+}
+
+.content > .middle > .section:hover {
+	
 }
 
 .content > .right {
