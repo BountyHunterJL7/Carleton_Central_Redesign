@@ -140,11 +140,6 @@
     
 
     <!-- Footer -->
-    <div>
-
-
-
-    </div>
-    <!-- End of Footer -->
+    <?php include '../templates/footer.php' ?>
 
 </body>

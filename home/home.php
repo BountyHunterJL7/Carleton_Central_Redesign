@@ -70,7 +70,6 @@
 	</div>
 
 	<!-- Footer -->
-	<div class="flex footer">
-		Footer goes here
-	</div>
+	<?php include '../templates/footer.php' ?>
+	
 </body>

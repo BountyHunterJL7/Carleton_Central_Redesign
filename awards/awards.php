@@ -67,10 +67,8 @@
     <!-- End of Content -->
     
     <!-- Footer -->
-    <div>
-
-
-    </div>
+    <?php include '../templates/footer.php' ?>
+    
     <!-- End of Footer -->
     
 </body>
