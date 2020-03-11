@@ -40,39 +40,19 @@
 	
 	<?php 
 		if (isset($_POST['update_personal'])) {
-		
-			$phone = trim($_POST['phoneNumber']);		
-			$address = trim($_POST['address']);	
-			$id = $_SESSION['id'];
-		
-		/*
-			$stmt = $conn->prepare("UPDATE StudentInfo SET PhoneNumber = ?, Address = ? WHERE Student_ID = ?");
-			$stmt->bind_param('isi', $phone, $address, $id);
 			
 			$phone = trim($_POST['phoneNumber']);		
 			$address = trim($_POST['address']);	
 			$id = $_SESSION['id'];
 			
-			$stmt->execute();
-		*/	
+			$query = "UPDATE StudentInfo SET PhoneNumber = $phone, Address = '$address' WHERE Student_ID = $id";
 			
-				
-		
-					$query = "UPDATE StudentInfo SET PhoneNumber = '$phone' , Address = '$address' WHERE Student_ID = $id";
+			$conn->query($query);
 			
-					$result = $conn->query($query);
+			$_SESSION['phone'] = $phone;
+			$_SESSION['address'] = $address;
 			
-					if($result->num_rows == 1) {		
-						while ($row = $result->fetch_assoc()){
-							$_SESSION['address'] = $row['Address'];
-							$_SESSION['phone'] = $row['PhoneNumber'];
-						}
-		
-					}
-			
-			
-				echo $conn->error;
-		
+			header('location: http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php');
 		}
 	?>
 </body>
