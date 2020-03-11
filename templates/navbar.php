@@ -116,7 +116,7 @@ echo '
         </div>
         
         <div class="flex middle" id="navigationDiv">
-            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInformation.php" class="topNav">Personal Info</a>
+            <a href="../PersonalInfo/PersonalInformation.php" class="topNav">Personal Info</a>
 
             <a href="../studentRecords/studentRecords.php" class="topNav">Student Records</a>
 
