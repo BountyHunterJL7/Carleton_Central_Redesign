@@ -28,7 +28,7 @@
     <div id="wrapper">
         <form method="POST" action="EditPersonalInfo.php">
             <div>    
-                <label for="address"><b>Your Phone Number</b></label>
+                <label for="phoneNumber"><b>Your Phone Number</b></label>
                 <input type="number" id="phoneNumber" name="phoneNumber" />
 
                 <label for="address"><b>Your Address</b></label>
@@ -52,7 +52,7 @@
 			$_SESSION['phone'] = $phone;
 			$_SESSION['address'] = $address;
 			
-			header('location: http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php');
+			// header('location: http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php');
 		}
 	?>
 </body>
