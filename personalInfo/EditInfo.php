@@ -61,7 +61,7 @@
 			$em_relation = trim($_POST['em_relation']);
 			$em_id = $_SESSION['em_id'];
 			
-			$query = "UPDATE EmergencyContact SET FirstName = '$em_fname', LastName = '$em_lname', EmailAddress = '$em_email', PhoneNumber = '$em_phone', RelationToStudent = '$em_relation' WHERE EmergencyContact_ID = $em_id";
+			$query = "UPDATE EmergencyContact SET FirstName = '$em_fname', LastName = '$em_lname', EmailAddress = '$em_email', Address = '$em_address', PhoneNumber = $em_phone, RelationToStudent = '$em_relation' WHERE EmergencyContact_ID = $em_id";
 
 			$conn->query($query);
 			
