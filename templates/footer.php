@@ -4,6 +4,7 @@ echo '
     .footer {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     
         margin-top: 4%;
         padding: 12%;
@@ -22,6 +23,7 @@ echo '
         
         display: flex;
         align-items: baseline;
+        justify-content: space-evenly;
     }
     
     .footer > .footerDiv > a {

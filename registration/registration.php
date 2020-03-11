@@ -104,11 +104,14 @@
                 <button class="add" type="button">Add</button>
             </div>
         </div><!-- End of wrapper div -->
-        
+
         <!-- View online courses button-->
         <button class="viewOnlineCourses redButton" type="button">View Online Courses</button>
 
         <!-- Student timetable -->
+
+        <!-- Footer -->
+        <?php include '../templates/footer.php' ?>
 
     </div><!-- End of div content -->
 
