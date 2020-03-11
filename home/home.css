@@ -96,10 +96,6 @@
 	background-color: var(--main-ui-front);
 }
 
-.content > .middle > .section:hover {
-	
-}
-
 .content > .right {
 	flex-grow: 0;
 	padding: 3em;
