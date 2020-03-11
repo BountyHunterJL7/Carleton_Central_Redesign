@@ -6,13 +6,16 @@
 	<!-- Link to side stylesheet -->
 	<link rel="stylesheet" href="./home.css" />
 
+	<!-- Page icon -->
+	<link rel="shortcut icon" href="../media/carleton_mini_logo.png">
+
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 	<!-- Header -->
-	<div class="navbar">
+	<div class="cu-navbar">
 		<?php include '../templates/navbar.php' ?>
 	</div>
 
@@ -33,9 +36,23 @@
 
 		<!-- Middle section -->
 		<div class="flex middle">
-			<div class="flex rounded shadow-small schedule-section"></div>
-			<div class="flex rounded shadow-small progress-section"></div>
-			<div class="flex rounded shadow-small amountToPay-section"></div>
+			<div class="flex rounded shadow-small timetable-section section" onclick="window.location = '../registration/registration.php'">
+				<div id="timetable-section-button" class="button rounded shadow-small">
+					<h1>Student Timetable</h1>
+				</div>
+			</div>
+
+			<div class="flex rounded shadow-small progress-section section" onclick="window.location = '../studentRecords/studentRecords.php'">
+				<div id="progress-section-button" class="button rounded shadow-small">
+					<h1>Academic Progress</h1>
+				</div>
+			</div>
+
+			<div class="flex rounded shadow-small amountToPay-section section" onclick="window.location = '../studentRecords/studentRecords.php'">
+				<div id="amountToPay-section-button" class="button rounded shadow-small">
+					<h1>Amount to Pay</h1>
+				</div>
+			</div>
 		</div>
 
 		<!-- Right section -->

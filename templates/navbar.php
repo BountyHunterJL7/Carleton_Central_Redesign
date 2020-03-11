@@ -3,36 +3,36 @@ echo '
 	<script src="https://use.fontawesome.com/7f0bcd1195.js"></script>
 
 	<style>
-	.navbar {
+	.cu-navbar {
 		display: flex;
 		height: 5em;
 		margin:0;
 		background-color: var(--main-black);
 	}
 	
-	.navbar > .left {
+	.cu-navbar > .left {
 		width: 14em;
 		display: flex;
 	}
 	
-	.navbar #header-logo {
+	.cu-navbar #header-logo {
 		margin: auto;
 		width: 10em;
 		display: flex;
 	}
-	.navbar > .left > a {
+	.cu-navbar > .left > a {
 		margin: auto;
 	
 		max-width: 100%;
 		height: auto;
 	}
 	
-	.navbar > .middle {
+	.cu-navbar > .middle {
 		justify-content: start;
 		align-items: center;
 	}
 	
-	.navbar > .middle > a {
+	.cu-navbar > .middle > a {
 		padding: .3em;
 		padding-left: .5em;
 		padding-right: .5em;
@@ -44,11 +44,11 @@ echo '
 		font-size: 1.1em;
 		text-align: center;
 	}
-		.navbar > .middle > a:hover {
+		.cu-navbar > .middle > a:hover {
 			background-color: var(--main-red);
 		}
 	
-	.navbar > .right {
+	.cu-navbar > .right {
 		width: 2em;
 	}
 	
@@ -59,12 +59,12 @@ echo '
 	
 	/* When the screen gets too small, these rules will apply */
 	@media only screen and (max-width: 1024px) {
-		.navbar > .middle > a {
+		.cu-navbar > .middle > a {
 			display: none;
 		}
 	
 		/* Class to apply after clicking hamburger button */
-		.navbar > .middle > .afterClick {
+		.cu-navbar > .middle > .afterClick {
 			/*After click*/
 			color: black;
 			display: block;
@@ -80,11 +80,11 @@ echo '
 			display: block;
 		}
 	
-		.navbar > .right > .icon {
+		.cu-navbar > .right > .icon {
 			display: flex;
 		}
 	
-		.navbar > .right > .icon {
+		.cu-navbar > .right > .icon {
 			text-decoration: none;
 			padding: 1.5em;
 		}
@@ -93,11 +93,11 @@ echo '
 			display: none;
 		}
 		
-		.navbar > .right {
+		.cu-navbar > .right {
 			width: 6em;
 		}
 	
-		.navbar > .displayAsList  {
+		.cu-navbar > .displayAsList  {
 			/*After click*/
 			margin-top: 80px;
 			z-index: 2;
@@ -116,7 +116,7 @@ echo '
         </div>
         
         <div class="flex middle" id="navigationDiv">
-            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInformation.php" class="topNav">Personal Info</a>
+            <a href="../PersonalInfo/PersonalInformation.php" class="topNav">Personal Info</a>
 
             <a href="../studentRecords/studentRecords.php" class="topNav">Student Records</a>
 
@@ -132,7 +132,7 @@ echo '
         </div>
 
         <div class="right">
-            <a href="javascript:void(0);" class="icon" onclick="header()">
+            <a href="javascript:void(0);" class="icon" onclick="doHeader()">
                 <i class="fa fa-bars fa-2x" id="hamburgerButton" style="color:#fff;"></i>
                 <i class="fa fa-times fa-2x" id="xButton" style="color:#fff; display: none;"></i>
             </a>
@@ -140,7 +140,7 @@ echo '
 	</div>
 	
 	<script>
-	function header() {
+	function doHeader() {
 
 		//Find all the navigation buttons and store them in a variable
 		var navElements = document.querySelectorAll(".topNav");

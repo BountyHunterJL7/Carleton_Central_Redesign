@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php 
+	require_once('../server/server.php');
+?>
+
+<!DOCTYPE html>
 <head>
     <title>Carleton Central | Personal Information</title>
 
@@ -16,11 +20,11 @@
 </head>
 <body>
     <!-- Header -->
-	<div class="navbar">
-		<?php include '../templates/navbar.php' ?>
+	<div class="cu-navbar">
+		<?php 
+			include '../templates/navbar.php';
+		?>
 	</div>
-
-
 
     <div id="Wrapper">
         <div class="campusCard">
@@ -44,63 +48,97 @@
         <h1>Student Information</h1>
         <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
     </div>
+
     <div>
         <div>
             <p>Personal Information</p>
             <div>
-                <input type="text" value="Name" readonly><br><br>
-                <input type="text" value="Email" readonly><br><br>
-
-                <input type="text" for="adress" value="<?php
-                echo $_REQUEST["phoneNumber"];
-                ?> " readonly><br><br>
-
+				<!-- Name -->
                 <input type="text" value="<?php
-                echo $_REQUEST["address"];
-                ?> " readonly><br><br>
-                 
+                echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+                ?>" readonly><br><br>
+				
+				<!-- Email -->
                 <input type="text" value="<?php
-                echo $_REQUEST["postalCode"];
+                echo $_SESSION['email'];
+                ?>" readonly><br><br>
+
+				<!-- Phone Number -->
+                <input type="text" for="address" value="<?php
+                echo $_SESSION['phone'];
                 ?> " readonly><br><br>
+
+				<!-- Street Address -->
+                <input type="text" value="<?php
+                echo $_SESSION['address'];
+                ?>" readonly><br><br>
                 
-                <input type="text" value="Your SIN number is on record" readonly><br><br>
+                <input type="text" value="Your Social Insurance Number (SIN) is on record" readonly><br><br>
                 <form action="EditPersonalInfo.php">
-                <input type="submit" value="Edit" />
+                <input id="submit" type="submit" value="Edit" />
                 </form><br>
             </div>
 
+			<?php
+				$emergency_id = $_SESSION['emergency'];
+				
+				
+				// Select emergency contact info from server. 
+				
+				
+				$query = "SELECT * FROM EmergencyContact WHERE EmergencyContact_ID=$emergency_id";
+			
+				$result = $conn->query($query);
+				
+			
+				if($result->num_rows == 1) 
+				{		
+					while ($row = $result->fetch_assoc()){
+						$_SESSION['em_id'] = $row['EmergencyContact_ID'];
+						$_SESSION['em_fname'] = $row['FirstName'];
+						$_SESSION['em_lastname'] = $row['LastName'];
+						$_SESSION['em_address'] = $row['Address'];
+						$_SESSION['em_email'] = $row['EmailAddress'];
+						$_SESSION['em_phone'] = $row['PhoneNumber'];
+						$_SESSION['em_relation'] = $row['RelationToStudent'];
+					}
+				}
+			?>
+			
+			
             <div>
                 <p>Emergency Contact</p>
                 <div>
+					<!-- Name -->
                     <input type="text" for="contactName" value="<?php
-                    echo $_REQUEST["contactName"];
+                    echo $_SESSION['em_fname'] . " " .  $_SESSION['em_lastname'];
                     ?>" readonly></input><br><br>
                     
+					<!-- Relationship -->
                     <input type="text" for="ContactRelationship" value="<?php
-                    echo $_REQUEST["contactRelationship"];
+                    echo $_SESSION['em_relation'];
                     ?>" readonly></input><br><br>
                     
+					<!-- Phone num-->
                     <input type="text" for="contactNumber" value="<?php
-                    echo $_REQUEST["contactNumber"];
+                    echo $_SESSION['em_phone'];
                     ?>" readonly></input><br><br>
                     
+					<!-- Address -->
                     <input type="text" for="contactAddress" value="<?php
-                    echo $_REQUEST["contactAddress"];
+					echo $_SESSION['em_address'];
                     ?>" readonly></input><br><br>
                     
-                    <input type="text" for="contactCountry" value="<?php
-                    echo $_REQUEST["contactCountry"];
-                    ?>" readonly></input><br><br>
-                    
-                    <input type="text" for="contactPostalCode" value="<?php
-                    echo $_REQUEST["contactPostalCode"];
+                   <!-- Email -->
+                    <input type="text" for="email" value="<?php
+					echo $_SESSION['em_email'];
                     ?>" readonly></input><br><br>
                     
                     
                     
                 </div>
                 <form action="EditInfo.php">
-                    <input type="submit" value="Edit" />
+                    <input id="submit" type="submit" value="Edit" />
                 </form><br>
             </div>
 
@@ -109,11 +147,11 @@
                 <p>To change your legal name or perferred first name visit the registrars office (300 Tory Building - 8:30 to 4:30 Monday to Friday)</p>
                 <p>To change your MyCarletonOne Account information visit </p><a href="https://myone.carleton.ca">myone.carleton.ca</a>
                 <p>To change your SIN number contact student_accounts@carleton.ca</p>
-                <a href="#">Trevel Regestry</a>
+                <a href="#">Travel Registry</a>
             </div>
         <div>
     </div>
-</div>
+	</div>
     </div>
 </body>
 </html>

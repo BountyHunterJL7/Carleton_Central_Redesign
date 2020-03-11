@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="cu-navbar">
         <?php include '../templates/navbar.php' ?>
     </div>
     <!-- End of Navbar -->
@@ -41,11 +41,11 @@
                 <p>
                     Manage your academic and non-academic support services.
                 </p>
-                <button class="view" type="button">View</button>
+                <button onclick="window.location.href = 'http://ugrad.bitdegree.ca/~brandonwhite/studentRecords/support.php';" class="view" type="button">View</button>
             </div>
 
             <div class="admissions">
-                <img id="raven-logo" src="../media/Admission.png"/>
+                <img id="raven-logo" src="../media/admission.png"/>
                 <h2>
                     Admissions
                 </h2>
