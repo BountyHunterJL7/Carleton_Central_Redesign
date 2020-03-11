@@ -41,7 +41,7 @@
 					<input type="text" id="em_email" name="em_email" />
 					
 					<label for="em_phone"><b>Phone Number</b></label> 
-					<input type="nubmer" id="em_phone" name="em_phone" />
+					<input type="number" id="em_phone" name="em_phone" />
 					
 					<label for="em_relation"><b>Relation to Student</b></label> 
 					<input type="text" id="em_relation" name="em_relation" />
