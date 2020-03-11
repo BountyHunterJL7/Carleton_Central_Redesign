@@ -36,7 +36,7 @@
         <div class="carousel-inner">
             <!--CAROUSEL IMAGES-->
             <div class="item active">
-                <img class="image" src="../media/campus_landscape_summer.jpg" alt="donkey kong">
+                <img class="image" src="../media/banner3.jpg" alt="donkey kong">
                 <div class="my-auto text-center" id="hero-text">
                     <p style="color:white;">
                         Support Dogs
@@ -45,7 +45,7 @@
             </div>
 
             <div class="item">
-                <img class="image" src="../media/campus_landscape_summer.jpg" alt="my name jeff">
+                <img class="image" src="../media/banner4.jpg" alt="my name jeff">
                 <div class="my-auto text-center" id="hero-text">
                     <p style="color:white;">
                         Support Dogs
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="item">
-                <img class="image" src="../media/campus_landscape_summer.jpg" alt="my name jeff">
+                <img class="image" src="../media/banner2.jpg" alt="my name jeff">
                 <div class="my-auto text-center" id="hero-text">
                     <p style="color:white;">
                         Support Dogs
