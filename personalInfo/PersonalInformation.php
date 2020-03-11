@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Header -->
-	<div class="navbar">
+	<div class="cu-navbar">
 		<?php 
 			include '../templates/navbar.php';
 		?>

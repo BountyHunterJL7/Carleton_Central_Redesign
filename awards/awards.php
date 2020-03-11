@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="cu-navbar">
         <?php include '../templates/navbar.php' ?>
     </div>
     <!-- End of Navbar -->
