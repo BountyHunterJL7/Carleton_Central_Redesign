@@ -37,19 +37,19 @@
 		<!-- Middle section -->
 		<div class="flex middle">
 			<div class="flex rounded shadow-small timetable-section section" onclick="window.location = '../registration/registration.php'">
-				<div id="timetable-section-button" class="button rounded">
+				<div id="timetable-section-button" class="button rounded shadow-small">
 					<h1>Student Timetable</h1>
 				</div>
 			</div>
 
 			<div class="flex rounded shadow-small progress-section section" onclick="window.location = '../studentRecords/studentRecords.php'">
-				<div id="progress-section-button" class="button rounded">
+				<div id="progress-section-button" class="button rounded shadow-small">
 					<h1>Academic Progress</h1>
 				</div>
 			</div>
 
 			<div class="flex rounded shadow-small amountToPay-section section" onclick="window.location = '../studentRecords/studentRecords.php'">
-				<div id="amountToPay-section-button" class="button rounded">
+				<div id="amountToPay-section-button" class="button rounded shadow-small">
 					<h1>Amount to Pay</h1>
 				</div>
 			</div>
