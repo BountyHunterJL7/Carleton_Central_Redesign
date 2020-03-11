@@ -223,6 +223,13 @@
             </form>
 
         </div>
+
     </div>
 </div>
+
+    <!-- End of Content -->
+
+    <!-- Footer -->
+    <?php include '../templates/footer.php' ?>
+
 </body>

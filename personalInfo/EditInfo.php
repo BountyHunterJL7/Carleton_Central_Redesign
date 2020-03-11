@@ -75,5 +75,9 @@
 			//header('location: http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php');
 		}
 	?>
+
+	<!-- Footer -->
+    <?php include '../templates/footer.php' ?>	
+
 </body>
 </html>

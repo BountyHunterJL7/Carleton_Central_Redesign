@@ -92,5 +92,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <?php include '../templates/footer.php' ?>
 
 </body>
