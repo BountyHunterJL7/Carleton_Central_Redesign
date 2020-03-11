@@ -5,6 +5,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Carleton Central | Login</title>
+
+    <!-- Link to global stylesheet -->
+	<link rel="stylesheet" href="../css/global.css" />
     
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
 
