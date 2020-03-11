@@ -20,34 +20,11 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <div class="left">
-            <a href="../home/home.html">
-                <img
-                    id="header-logo"
-                    src="../media/carleton_university_logo_white.png"
-                />
-            </a>
-        </div>
-
-        <div class="flex middle">
-            <a href="http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php">Personal Info</a>
-
-            <a href="https://bettercarletoncentral.com/studentrecords/studentrecords">Student Records</a>
-
-            <a href="https://bettercarletoncentral.com/registration/registration">Registration</a>
-
-            <a href="https://bettercarletoncentral.com/awards/awards">Awards/Financial Assistance</a>
-
-            <a href="https://bettercarletoncentral.com/my-success/mysuccess">MySuccess</a>
-
-            <a href="https://bettercarletoncentral.com/housing/housing">Housing</a>
-        </div>
-
-        <div class="right"></div>
-    </div>
-
-
+	<div class="navbar">
+		<?php 
+			include '../templates/navbar.php';
+		?>
+	</div>
 
     <div id="Wrapper">
         <div class="campusCard">
@@ -126,7 +103,6 @@
 						$_SESSION['em_relation'] = $row['RelationToStudent'];
 					}
 				}
-				
 			?>
 			
 			
