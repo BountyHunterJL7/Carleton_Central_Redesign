@@ -1,4 +1,4 @@
-﻿<?php require_once('server/server.php'); ?>
+﻿<?php require_once('server/server_up.php'); ?>
 
 <!DOCTYPE html>
 
