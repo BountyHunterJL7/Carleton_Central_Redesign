@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../media/carleton_mini_logo.png">
 
     <!-- Link to side stylesheet -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./housing.css">
 
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -41,7 +41,7 @@
         -->
 
         <!-- View Housing -->
-        <div>
+
 
             <!-- 
                 **********************************
@@ -73,122 +73,91 @@
                 (When you click apply, you will be taken to the application page and that house's details will be autofilled.)
             -->
 
-            <h1>
-                View Housing
-            </h1>
-
-            <!-- Sample Card -->
-            <span id="HOUSE0001">
-                <h2></h2>
-                <h3></h3>
-                <img alt="exterior">
-                <img alt="interior">
-                <img alt="floorplan">
-                <p></p>
-                <button type="button">Apply</button>
-            </span>
-            <!-- End of Sample Card -->
-
-
-        </div>
+<div id="Wrapper">
+            <div class="status">
+                <h1 class="cardTitle">Housing Status</h1>
+                <p>Lorum Ipsum type beat</p><br>
+                <div class="linkBox">
+                    <img
+                            id="raven-logo"
+                            src="../media/HousingResidence.png"
+                    />
+                    <h3>Housing Status</h3>
+                    <p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+                    <div class="viewButton">
+                        <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
+                    </div>
+                    
+                </div>
+            </div>
         <!-- End of View Housing -->
 
 
         <!-- Apply to Residence -->
-        <div>
-
-            <h1>
-                Apply to a Residence
-            </h1>
-
+        <div class="apply">
+            <div class="titleText">
+                <h1>Housing Application Form</h1>
+                <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+                <select name="term" class ="termSelect">
+                <option value="0">Select Term</option>
+                <option value="1">Winter</option>
+                <option value="2">Summer</option>
+                <option value="3">Fall</option>
+                </select>
+            </div>
 
             <form>
                 <h2>
-                    Applicant Information
+                    Student Information
                 </h2>
-
+                <br>
                 First name:
-                <br>
                 <input type="text" name="firstname">
-                <br>
-                <br>
-
+                <br><br>
                 Last name:
-                <br>
                 <input type="text" name="lastname">
-                <br>
-                <br>
-
-                Gender:
-                <br>
+                <br><br>
                 <select name="gender">
+                    <option value="0">Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
                 </select>
-                <br>
-                <br>
+                <br><br>
 
-                Year standing:
-                <br>
                 <select name="year">
+                <option value="0">Year Standing</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
                     <option value="three">Three</option>
                     <option value="four">Four</option>
                 </select>
-                <br>
-                <br>
-
+                <br><br>
                 Phone number:
-                <br>
                 <input type="text" name="phone">
-                <br>
-                <br>
-
+                <br><br>
                 Email address:
-                <br>
                 <input type="text" name="email">
-                <br>
-                <br>
-
+                <br><br>
                 Address:
-                <br>
                 <input type="text" name="address">
-                <br>
-                <br>
-
+                <br><br>
                 City:
-                <br>
                 <input type="text" name="city">
-                <br>
-                <br>
-
+                <br><br>
                 Country:
-                <br>
                 <input type="text" name="country">
-                <br>
-                <br>
-
+                <br><br>
                 Province:
-                <br>
                 <input type="text" name="province">
-                <br>
-                <br>
-
+                <br><br>
                 Postal Code:
-                <br>
                 <input type="text" name="postal">
-                <br>
-                <br>
+                <br><br>
 
-                <h2>
-                    Residence
-                </h2>
-
-                Residency Name:
-                <br>
+                
                 <select name="residency">
+                <option value="0">Residence Name</option>
                     <option value="dundasStormont">Dundas and Stormont</option>
                     <option value="frontenac">Frontenac</option>
                     <option value="glengarry">Glengarry</option>
@@ -198,77 +167,62 @@
                     <option value="lennoxAddington">Lennox and Addington</option>
                     <option value="prescott">Prescott</option>
                 </select>
-                <br>
-                <br>
+                <br><br>
 
-                Room Number:
-                <br>
                 <select name="residency">
+                <option value="0">Floor</option>
                     <!-- We need to find a way to populate these with the room numbers in the database. They can be pretty random, as long as it works -->
                     <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                    <option value="1">6</option>
+                    <option value="1">7</option>
+                    <option value="1">8</option>
+                    <option value="1">9</option>
+                    <option value="1">10</option>
+                    <option value="1">11</option>
+                    <option value="1">12</option>
                 </select>
-                <br>
-                <br>
-
-                <h2>
-                    Deposit
-                </h2>
+                <br><br>
 
                 <a href="https://housing.carleton.ca/residence-and-meal-plan-fees/traditional-residence-fees/">Click here for current deposit fees</a>
+                <br><br><br><br>
+                
+                <h2>
+                    Payment Information
+                </h2>
                 <br>
-                <br>
-
                 Name on card:
-                <br>
+                
                 <input type="text" name="creditName">
-                <br>
-                <br>
+                <br><br>
+                
 
                 Card number:
-                <br>
+                
                 <input type="text" name="creditNumber">
-                <br>
-                <br>
+                <br><br>
+                
 
                 Expiration (mm/yy):
-                <br>
+                
                 <input type="text" name="creditExpiration">
-                <br>
-                <br>
+                <br><br>
+                
 
                 Security code:
-                <br>
+                
                 <input type="text" name="creditSecurity">
-                <br>
-                <br>
+                <br><br>
+                
 
 
                 <input type="submit" value="Submit">
             </form>
 
         </div>
-        <!-- End of Apply to Residence
-        
-
-        <!-- View Applications -->
-        <div>
-            <h1>
-                View Applications
-            </h1>
-
-            <!-- At this point it's more of a PHP thing to retrieve application information. -->
-        </div>
-        <!-- End of View Applications -->
-
     </div>
-    <!-- End of Content -->
-
-    <!-- Footer -->
-    <div>
-
-
-
-    </div>
-    <!-- End of Footer -->
-
+</div>
 </body>
