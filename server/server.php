@@ -1,38 +1,80 @@
 <?php
 	/*
-		This file handles actions sent by other php files.
+	
+		FILE: server.php 
+		AUTHOR: Brandon 
+	
+		PURPOSE: Connects to database and handles
+		actions sent by other PHP files.
+		
+		NOTE: Yes we are open to SQL injection and yes much of this isn't the correct way to do this
+		but it's the only way that works for us with how the ugrad server is set up.
+	
+		TABLE OF CONTENTS (CTRL+F to jump):
+		1. Connect to database
+		2. Display errors
+		3. Session handling
+		
 	*/
 	
-	// Getting database connection. 
-	require_once('connection.php');
-	$errors = array();
-	require_once('errors.php');
-	
-	// Set session, if not set already.
-	// TODO:
-	// If session is not set, return to home page.
-	// Also maybe logout after 30 minutes of inactivity.
-	if (!isset($_SESSION)) 
-	{
-		session_start();
-	}
-	
-	// Variable declarations
-	 
-	
-	/**********************************	
-		LOGIN.PHP 
+	// ************************************v 1. CONNECT TO DATABASE v************************************
+
+		// Definitions so this doesn't change.
+		DEFINE ('DB_USER', 'tomasbabkinedica');
+		DEFINE ('DB_PASS', 'YemPPA3V1Z');
+		DEFINE ('DB_HOST', 'ugrad.bitdegree.ca');
+		DEFINE ('DB_NAME', 'tomasbabkinedica');
 		
-		TODO: 
-		+ 	Would be nice to have an
-			"Invalid Username/ Password"
-			error pop up.
-		+ 	Connection seems slow. Indication
-			that it's actually loading might
-			be nice.
-		+ 	"Remember me" should do something.
-		+	"Forgot password" should do something.
-	***********************************/
+		// Create connection.
+		$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+		
+		// Connection check method 1
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+	// ************************************^ 1. CONNECT TO DATABASE ^************************************
+	// require_once('connection.php');
+	
+	
+	
+	// ************************************v 2. DISPLAY ERRORS v************************************
+	
+		// This was the method we were shown in MDM... there are other ways that I will explore. 
+		$errors = array();
+		require_once('errors.php');
+	
+	// ************************************^ 2. DISPLAY ERRORS ^************************************
+	
+	
+	
+	// ************************************v 3. SESSION HANDLING v************************************
+	
+		// Set session, if not already. 
+		if (!isset($_SESSION)) 
+		{
+			session_start();
+/**/		// This line might be an issue v
+			$_SESSION['login'] = 0;
+		}
+		
+		// If user is not logged in, redirect to login page. 
+/**/	// This statement might be an issue v	
+		if ($_SESSION['login'] = 0) {
+			header('location: ugrad.bitdegree.ca/~brandonwhite/index.php');
+		}
+		
+		// Bonus TODO: Log out after 30 minutes of inactivity.
+	 
+	// ************************************^ 3. SESSION HANDLING ^************************************
+	
+	
+	
+	// ************************************v 4. LOGIN v************************************
+	
+	/*
+		TODO: "Remember me" should do something. "Forgot password" should do something. 
+	*/
 	
 	// When user submits login info.
 	if (isset($_POST['login_user']))
@@ -69,11 +111,14 @@
 					$_SESSION['pass'] = $row['Password'];
 					
 				}
-				
+			$_SESSION['login'] = 1;
 			header('location: home/home.php');
 			}
 		}
 	}
+	// ************************************^ 4. LOGIN ^************************************
+	
+	
 	
 	/**********************************	
 		HOME.PHP
