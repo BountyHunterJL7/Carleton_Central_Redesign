@@ -161,9 +161,7 @@
 			*/
 		
 		// UPDATE EMERGENCY INFO
-		if(isset($_POST['update_emergency'])) {
-			$stmt = $conn->prepare("UPDATE EmergencyContact SET WHERE EmergencyContact_ID = ?" 
-		}
+		
 		
 		// UPDATE PERSONAL INFO
 		if (isset($_POST['update_personal'])) {
