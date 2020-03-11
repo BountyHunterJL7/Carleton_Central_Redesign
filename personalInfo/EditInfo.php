@@ -1,3 +1,7 @@
+<?php 
+	require_once('../server/server.php');
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -8,7 +12,7 @@
     <link rel="stylesheet" href="../css/global.css">
 
     <!-- Link to side stylesheet -->
-    <link rel="stylesheet" href="../personalInfo/edit.css">
+    <link rel="stylesheet" href="edit.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +20,7 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <?php include '../templates/navbar-template.php' ?>
+        <?php include '../templates/navbar.php' ?>
     </div>
 
     <h3>Enter your Emergency Contact Info</h3>
