@@ -31,7 +31,7 @@
 		}
 		
 		// Connection check method 2 (I'll see which is better)
-		if ($mysqli->connect_errno) {
+		if ($conn->connect_errno) {
 			echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 		}
 
@@ -83,7 +83,7 @@
 		// Biggest change here is that I am now using prepared statements to log the user in. 
 		
 		// Prepare statement.
-		$stmt = $conn->prepare("SELECT * FROM StudentInfo WHERE Username = '?' AND Password = '?'");
+		$stmt = $conn->prepare("SELECT * FROM StudentInfo WHERE Username = ? AND Password = ? ");
 		$stmt->bind_param('ss', $username, $password); 
 		
 		// Get info from forms and trim white space, then save as variables above.
@@ -93,10 +93,12 @@
 		// Execute statement
 		$stmt->execute();
 		
-		// Get result
+		// Bind result
 		$result = $stmt->get_result();
 		
 		// Now fetch associated rows from result and save as session variables
+	
+		$num_of_rows = $result->num_rows;
 	
 		while ($row = $result->fetch_assoc()){
 			$_SESSION['id'] = $row['Student_ID'];
@@ -114,9 +116,13 @@
 			// $_SESSION['pass'] = $row['Password'];
 		}
 		
+		$stmt->free_result();
+		
+		$stmt->close();
+		
 		// Set user as logged in and send to the home page.
-		$_SESSION['login'] = 1; 	
-		header('location: home/home.php');	
+		// $_SESSION['login'] = 1; 	
+		// header('location: home/home.php');	
 	}
 	
 	// ************************************^ 4. LOGIN ^************************************
@@ -194,7 +200,7 @@
 		function getEmergencyInfo() { 			
 			// Prepare statement.
 /**/		// i might need to be set to s. See last /**/ above
-			$stmt = $conn->prepare("SELECT * FROM EmergencyContact WHERE EmergencyContact_ID=?";);
+			$stmt = $conn->prepare("SELECT * FROM EmergencyContact WHERE EmergencyContact_ID=?");
 			$stmt->bind_param('i', $emergency_id); 
 			
 			// Getting the ID of the contact 
