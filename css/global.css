@@ -105,3 +105,18 @@ a {
 		sans-serif;
 	font-weight: lighter;
 }
+
+/* Apply this class to any red button */
+.redButton {
+    background-color: #DF3742;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    width: 17%;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 12px;
+    margin-top: 4%;
+}
+
+/* Apply this class to any search bar */

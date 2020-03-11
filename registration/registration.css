@@ -1,0 +1,115 @@
+/* Course Registration title */
+
+/* Search Bar */
+.searchForm {
+    width: 70%;
+    margin: 5% auto 0 auto;
+}
+.searchBar {
+	-webkit-appearance: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #F0F0F0;
+
+    width: 60%;
+    padding: 6px;
+}
+.searchForm > button {
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+/* Drop Down list */
+.formWrapper {
+    position: relative;
+    margin: 2%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    -webkit-appearance: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px;
+    background-color: white;
+    width: 15%;
+    height: 28px;
+    margin-right: 8px;
+
+    background-image: url("../media/selectMenuArrow.png");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.4em top 50%, 0 0;
+    background-size: 10%;
+}
+
+/* Explainer paragraph */
+.explainerParagraph {
+    max-width: 80%;
+    margin: 0 auto;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Course list with add buttons */
+#wrapper{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Double check this */
+.content{
+    text-align: center;
+    margin-top:4%;
+}
+
+.course {
+        margin:1%;
+        background-Color:white;
+        padding-left: 1%;
+        padding-right:1%;
+        padding-top:1%;
+        padding-bottom:1%;
+        text-align:center;
+        width:28%;
+        float:left;
+        border-radius: 10pt;
+        box-shadow: 0px 0px 2px #b8b8b8;
+}
+
+.course > h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    max-width: 85%;
+    margin: 4% auto;
+}
+
+.course > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 0.8em;
+
+    max-width: 85%;
+    margin: 7% auto;
+}
+
+.course > .add {
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+
+    margin: 5% 0 5% 0;
+    width: 20%;
+    height: 11%;
+}
+
+.course > .add:hover {
+    background-color: #dcdcdc;
+}
+
