@@ -19,7 +19,7 @@
 		
 		<div class="container">
 		
-			<div class="loginbox">
+			<div class="loginbox rounded">
 			
 				<div class="imgcontainer">
 					<img src="logo.png" alt="Logo" class="logo" />
