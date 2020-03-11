@@ -6,7 +6,7 @@ echo '
         flex-wrap: wrap;
         justify-content: center;
     
-        margin-top: 4%;
+        margin-top: 0%;
         padding: 12%;
     
         align-items: baseline;
