@@ -49,7 +49,7 @@ echo '
                 src="../media/carleton_university_logo_white.png"
             />
             <div class="footerDiv">
-                <a href="../terms-conditions/terms-conditions.html" class="">Terms and conditions</a>
+                <a href="../terms-conditions/terms-conditions.php" class="">Terms and conditions</a>
                 <h3>Copyright Group 5</h3>
             </div>
     </div>
