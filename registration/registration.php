@@ -1,3 +1,8 @@
+<?php 
+	require_once('../server/server.php');
+?>
+
+<!DOCTYPE html>
 <head>
     <title>Carleton Central | Registration</title>
 
@@ -65,6 +70,25 @@
 
         <!-- Text -->
         <p class="explainerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <!-- Course list PHP requests -->
+        <?php 
+            //Open session
+            $course_id = $_SESSION['courseInfo'];
+
+            //SQL query to fetch course info
+            $query = "SELECT * FROM CourseInfo";
+
+            $result = $conn->query($query);
+
+            while ($row = $result->fetch_assoc()) {
+                //$_SESSION['courseName'] = 
+            }
+
+            console.log("test");
+        
+        
+        ?>
 
         <!-- Course list with add buttons -->
         <div id="wrapper">
