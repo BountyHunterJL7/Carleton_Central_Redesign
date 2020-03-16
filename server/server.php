@@ -50,12 +50,8 @@
 	
 	// ************************************v 3. SESSION HANDLING v************************************
 		session_start();
-		$_SESSION['login'] = 0;
-	
-		if (!isset($_SESSION['login'] = 0)) 
-		{
-			header('http://ugrad.bitdegree.ca/~brandonwhite/index.php');
-		}
+		
+		// Can't for the life of me figure out this redirect
 	 
 	// ************************************^ 3. SESSION HANDLING ^************************************
 	
