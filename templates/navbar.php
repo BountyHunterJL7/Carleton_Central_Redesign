@@ -128,7 +128,7 @@ echo '
 
             <a href="../housing/housing.php" class="topNav">Housing</a>
 
-            <a href="" class="topNav">Logout</a>
+            <a href="../server/logout.php" class="topNav">Logout</a>
         </div>
 
         <div class="right">
