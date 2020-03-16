@@ -49,11 +49,12 @@
 	
 	
 	// ************************************v 3. SESSION HANDLING v************************************
+		session_start();
+		$_SESSION['login'] = 0;
 	
-		// Set session, if not already. 
-		if (!isset($_SESSION)) 
+		if (!isset($_SESSION['login'] = 0)) 
 		{
-			
+			header('http://ugrad.bitdegree.ca/~brandonwhite/index.php');
 		}
 	 
 	// ************************************^ 3. SESSION HANDLING ^************************************
@@ -69,7 +70,7 @@
 	// When user submits login info.
 	if (isset($_POST['login_user']))
 	{
-		session_start();
+		$_SESSION['login'] = 1;
 		
 		// Get info from forms and trim white space, then save as variables.
 		$username = trim($_POST['username']);
