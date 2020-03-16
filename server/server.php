@@ -53,7 +53,7 @@
 		// Set session, if not already. 
 		if (!isset($_SESSION)) 
 		{
-			header('location: ugrad.bitdegree.ca/~brandonwhite/index.php');
+			header('location: ../index.php');
 		}
 	 
 	// ************************************^ 3. SESSION HANDLING ^************************************
