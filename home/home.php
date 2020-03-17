@@ -1,5 +1,6 @@
-<?php require_once('../server/server.php');
-
+<?php 
+	require_once('../server/server.php');
+?>
 <head>
 	<title>Carleton Central | Home</title>
 	<!-- Link to global stylesheet -->
