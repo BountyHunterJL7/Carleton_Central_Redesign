@@ -37,19 +37,19 @@
 				
 				<div>
 					<!-- Name -->
-					<p><input type="text" value="<?php
+					<p>Name: <?php
 					echo $_SESSION['fname'] . " " . $_SESSION['lname'];
-					?>" readonly></p>
+					?></p>
 					
 					<!-- Student ID -->    
-					<p><input type="text" value="<?php
+					<p>Student ID: <?php
 					echo $_SESSION['id'];
-					?>" readonly></p>    
+					?></p>    
 						
 					<!-- Email -->
-					<p><input type="text" value="<?php
+					<p>Cmail Address: <?php
 					echo $_SESSION['email'];
-					?>" readonly></p>
+					?></p>
 				</div>
 			</div>
 		</div>
