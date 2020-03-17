@@ -31,6 +31,23 @@
 			<!-- Profile section -->
 			<div class="flex rounded shadow-medium profile-section">
 				<img id="profile-image" src="../media/home/profile_image.jpg" />
+				
+				<div>
+					<!-- Name -->
+					<p><input type="text" value="<?php
+					echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+					?>" readonly></p>
+					
+					<!-- Student ID -->    
+					<p><input type="text" value="<?php
+					echo $_SESSION['id'];
+					?>" readonly></p>    
+						
+					<!-- Email -->
+					<p><input type="text" value="<?php
+					echo $_SESSION['email'];
+					?>" readonly></p>
+				</div>
 			</div>
 		</div>
 
