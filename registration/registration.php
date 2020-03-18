@@ -69,65 +69,44 @@
         </div>
 
         <!-- Text -->
-        <p class="explainerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="explainerParagraph">Register for courses. To add a course to your timeline, simply click the add button.</p>
 
         <!-- Course list PHP requests -->
         <?php 
-            //Open session
-            $course_id = $_SESSION['courseInfo'];
-
             //SQL query to fetch course info
             $query = "SELECT * FROM CourseInfo";
 
+            //Connect and make the sql request
             $result = $conn->query($query);
 
+            //Variable used to assign specific classes to each course
+            $course_number = 0;
+
+            echo '<div id="wrapper">';
+
             while ($row = $result->fetch_assoc()) {
-                //$_SESSION['courseName'] = 
+                //Every time we go through the loop, it's a new course
+                $course_number++;
+
+                //Echo the div containg the course information
+                echo '<div class="course '.$course_number.'">
+                <h2>'.$row['CourseName'].'</h2>
+                <p>'.$row['CourseDescription'].'</p>
+                <form action="" method="POST" class="addForm">
+                    <input class="add" type="submit" name="submitButton" value="Add">
+                </form>
+                </div>';//End of echo
             }
+            
+            echo '</div>';
 
-            console.log("test");
-        
-        
+            if(isset($_POST['submitButton'])){
+                //Prepare sql query
+                //$query = "ADD * FROM CourseInfo";
+
+                echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+            }
         ?>
-
-        <!-- Course list with add buttons -->
-        <div id="wrapper">
-            <div class="course 1">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-
-            <div class="course 2">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-
-            <div class="course 3">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-
-            <div class="course 4">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-
-            <div class="course 5">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-
-            <div class="course 6">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <button class="add" type="button">Add</button>
-            </div>
-        </div><!-- End of wrapper div -->
 
         <!-- View online courses button-->
         <button class="viewOnlineCourses redButton" type="button">View Online Courses</button>
