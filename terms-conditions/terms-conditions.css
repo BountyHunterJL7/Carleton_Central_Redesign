@@ -1,0 +1,35 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+
+	margin-bottom: 4em;
+	padding: 0 20em 0 20em;
+}
+
+.section:last-of-type {
+	margin-bottom: 10em;
+}
+
+#section-break {
+	flex: auto;
+	height: 1.5em;
+	background-color: #df3742;
+
+	margin: 0 20em 4em 20em;
+}
+
+#title {
+	align-self: center;
+	margin: 2em 0 2em 0;
+}
+
+.subtitle {
+	align-self: center;
+	margin-bottom: 1em;
+}

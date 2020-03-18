@@ -63,7 +63,7 @@
                 <p>
                     View your final grades for a selected term.
                 </p>
-                <button class="view" type="button">View</button>
+                <button onclick="window.location.href = 'http://ugrad.bitdegree.ca/~brandonwhite/studentRecords/mygrades.php';" class="view" type="button">View</button>
             </div>
         </div>
     </div>

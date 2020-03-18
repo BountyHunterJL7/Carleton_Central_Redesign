@@ -49,10 +49,21 @@
 	
 	
 	// ************************************v 3. SESSION HANDLING v************************************
-		session_start();
 		
-		// Can't for the life of me figure out this redirect
-	 
+		// This does not work but is my best attempt
+		if (!isset($_SESSION)) {
+			session_start();
+			$_SESSION['login'] = 0;
+		}
+		
+		$url = $_SERVER['REQUEST_URI'];
+		
+		function loggedIn() {
+			if($_SESSION['login'] = 0) {
+				header('location: ../index.php');
+			}
+		}
+		
 	// ************************************^ 3. SESSION HANDLING ^************************************
 	
 	

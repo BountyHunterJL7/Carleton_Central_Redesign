@@ -1,3 +1,7 @@
+<?php
+require_once('../server/server.php');
+?>
+
 <head>
 	<title>Carleton Central | Home</title>
 	<!-- Link to global stylesheet -->
@@ -31,6 +35,23 @@
 			<!-- Profile section -->
 			<div class="flex rounded shadow-medium profile-section">
 				<img id="profile-image" src="../media/home/profile_image.jpg" />
+
+				<div>
+					<!-- Name -->
+					<p>Name: <?php
+								echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+								?></p>
+
+					<!-- Student ID -->
+					<p>Student ID: <?php
+									echo $_SESSION['id'];
+									?></p>
+
+					<!-- Email -->
+					<p>Cmail Address: <?php
+										echo $_SESSION['email'];
+										?></p>
+				</div>
 			</div>
 		</div>
 
@@ -71,5 +92,5 @@
 
 	<!-- Footer -->
 	<?php include '../templates/footer.php' ?>
-	
+
 </body>
