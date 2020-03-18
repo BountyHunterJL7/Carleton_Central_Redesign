@@ -49,23 +49,21 @@
 	
 	
 	// ************************************v 3. SESSION HANDLING v************************************
-	
-		// Set session, if not already. 
-		if (!isset($_SESSION)) 
-		{
+		
+		// This does not work but is my best attempt
+		if (!isset($_SESSION)) {
 			session_start();
-/**/		// This line might be an issue v
 			$_SESSION['login'] = 0;
 		}
 		
-		// If user is not logged in, redirect to login page. 
-/**/	// This statement might be an issue v	
-		if ($_SESSION['login'] = 0) {
-			header('location: ugrad.bitdegree.ca/~brandonwhite/index.php');
+		$url = $_SERVER['REQUEST_URI'];
+		
+		function loggedIn() {
+			if($_SESSION['login'] = 0) {
+				header('location: ../index.php');
+			}
 		}
 		
-		// Bonus TODO: Log out after 30 minutes of inactivity.
-	 
 	// ************************************^ 3. SESSION HANDLING ^************************************
 	
 	
@@ -79,6 +77,8 @@
 	// When user submits login info.
 	if (isset($_POST['login_user']))
 	{
+		$_SESSION['login'] = 1;
+		
 		// Get info from forms and trim white space, then save as variables.
 		$username = trim($_POST['username']);
 		$password = trim($_POST['password']);
