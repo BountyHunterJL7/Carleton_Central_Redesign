@@ -49,6 +49,8 @@
 	
 	
 	// ************************************v 3. SESSION HANDLING v************************************
+		
+		// This does not work but is my best attempt
 		if (!isset($_SESSION)) {
 			session_start();
 			$_SESSION['login'] = 0;

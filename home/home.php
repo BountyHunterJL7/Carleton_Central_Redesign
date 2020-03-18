@@ -1,6 +1,5 @@
 <?php 
 	require_once('../server/server.php');
-	loggedIn();
 ?>
 <head>
 	<title>Carleton Central | Home</title>
