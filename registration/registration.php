@@ -1,5 +1,6 @@
 <?php 
-	require_once('../server/server.php');
+    require_once('../server/server.php');
+    //session_start();
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +105,7 @@
                 //Prepare sql query
                 //$query = "ADD * FROM CourseInfo";
 
-                echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+                echo $username;
             }
         ?>
 
