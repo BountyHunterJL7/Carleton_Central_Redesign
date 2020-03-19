@@ -1,5 +1,6 @@
-
-<!--add the server back -->
+<?php 
+	require_once('../server/server.php');
+?>
 
 <head>
     <title>Carleton Central | MyGrades</title>
