@@ -49,19 +49,22 @@
 
 		<div class="forms">
 			<div>
-				<select id="semester" name="semseterList" form="semseterForm">
-					<option value="0">Select a Semester</option>
-					<option value="Fall 2019">Fall 2019</option>
-					<option value="Winter 2020">Winter 2020</option>
-				</select>
 				
-				<form method="POST" action="mygrades.php" id="semesterForm" name="viewSemester">
+				
+				<form method="POST" action="mygrades.php" id="termForm" name="viewTerm">
+					<select id="term" name="chosenTerm" form="termForm">
+						<option value="0">Select a term</option>
+						<option value="Fall 2019">Fall 2019</option>
+						<option value="Winter 2020">Winter 2020</option>
+					</select>
 					<input type="submit">
 				</form>
 				
 				<?php
-					if(isset($_POST['viewSemester'])) {
+					if(isset($_POST['viewTerm'])){
+						$term = $_POST['chosenTerm'];
 						
+						echo $term;
 					}
 				?>
 			</div>
