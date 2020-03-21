@@ -47,8 +47,7 @@
 		// When user submits login info.
 		if (isset($_POST['login_user']))
 		{
-			$_SESSION['login'] = 1;
-			
+
 			// Get info from forms and trim white space, then save as variables.
 			// I realize there is no encryption.
 			$username = trim($_POST['username']);
