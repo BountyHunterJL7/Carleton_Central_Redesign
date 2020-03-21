@@ -50,13 +50,7 @@
 		<div class="forms">
 			<div>
 				
-				<form method="GET" action="mygrades_output.php" name="selectTerm">
-					<select id="term" name="term">
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
-					</select>
-					<input type="submit" value="Submit">
-				</form>
+				<form method="GET" action="mygrades_output.php"
 				
 			</div>
 
@@ -68,14 +62,15 @@
 							</div>
 						</div>
 
-				<form method="GET" action="myaudit_output.php" name="auditTerm">
-					<select id="auditTerm" name="auditTerm">
+				<select id="semester" name="semseterList" form="semseterForm">
+				<option value="0">Select a Semester</option>
 						<option value="Fall 2019">Fall 2019</option>
 						<option value="Winter 2020">Winter 2020</option>
-					</select>
-					<input type="submit" value="Submit">
-				</form>
-				
+				</select>
+
+				<form method="POST" action="mygrades.php" id="semesterForm" name="viewSemester">
+						<input type="submit">
+					</form>
 			</div>
 		</div>
 
