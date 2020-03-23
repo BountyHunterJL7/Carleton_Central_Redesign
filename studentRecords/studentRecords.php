@@ -27,7 +27,7 @@
         <h1>
             Student Records
         </h1>
-        <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+        <p>View and manage your student records.</p>
 
         <!-- List of options -->
 
