@@ -35,7 +35,7 @@
 
 
     <!-- Content -->
-    <div>
+    <div class="content">
         <h1>Award Online Application</h1>
 
         <!-- Search bar -->
