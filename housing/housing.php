@@ -30,49 +30,6 @@
     <!-- Content -->
     <div class="content">
 
-        <!-- 
-            **************************************************
-            *                                                *
-            * These will become hidden or unhidden depending *
-            * on which page you click. View housing is the   *
-            * default page.                                  *
-            *                                                *
-            **************************************************
-        -->
-
-        <!-- View Housing -->
-
-
-            <!-- 
-                **********************************
-                * Template for House Image Cards *
-                **********************************
-
-                (Clicking the image opens a larger view of the image. Not sure if this requires a link or not yet.)
-    
-                (Clicking the view details button could open up a popup where you can view details and click a button to apply.)
-                
-                <a href=" "><img src=" " alt =" " height=" " width=" "></a>
-                <button type="button">View Details</button>
-                
-                **********************************
-                
-                (On View Details:)
-                (This will be populated from the SQL database possibly.)
-
-                <span>
-                    <h2></h2>
-                    <h3></h3>
-                    <img alt="exterior">
-                    <img alt="interior">
-                    <img alt="floorplan">
-                    <p></p>
-                    <button type="button">Apply</button>
-                </span>
-
-                (When you click apply, you will be taken to the application page and that house's details will be autofilled.)
-            -->
-
 <div id="Wrapper">
             <div class="status">
                 <h1 class="cardTitle">Housing Status</h1>
@@ -97,7 +54,7 @@
         <div class="apply">
             <div class="titleText">
                 <h1>Housing Application Form</h1>
-                <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+                <p><a href="https://housing.carleton.ca/our-buildings/">View our housing choices.</a></p>
                 <select name="term" class ="termSelect">
                 <option value="0">Select Term</option>
                 <option value="1">Winter</option>
