@@ -53,13 +53,11 @@
 				// Set useful variables.
 				$term = $_GET['term'];
 				$courseListId = $_SESSION['coursesid'];
-				
+			
 				// Now let's put the course IDs in one array and grades in another.
 				$acourseIds = array();
 				$agrades = array();
 				$numCourses = 0;
-				$x = 0;
-				$y = 0;
 				
 				$query = "SELECT * FROM ListOfCourses WHERE CourseList_ID = '$courseListId' AND Term = '$term'";
 				$result = $conn->query($query);
@@ -69,7 +67,7 @@
 					while ($row = $result->fetch_assoc()) {
 						
 						$acourseIds[$numCourses] = $row['Course_ID'];
-						$agrades[$numCourses] = $row['Grade'];
+						$agrades[$numCourses] = $row['Grade'];		
 						$numCourses++;
 					}
 				}
@@ -77,7 +75,7 @@
 				// Cool, now lets get course names. 
 				$acourseNames = array();
 				
-				
+				$x = 0;
 				while($x < $numCourses) {
 					
 					$query = "SELECT CourseName FROM CourseInfo WHERE Course_ID = '$acourseIds[$x]'"; 
@@ -89,23 +87,27 @@
 					$x++;
 				}
 				
-				// Finally we throw it all together in a table.
-			//	echo	"<table>";
-			//	echo		"<tr>";
-			//	echo			"<th>Course ID</th>";
-			//	echo			"<th>Course Name</th>";
-			//	echo			"<th>Final Grade</th>";
-			//	echo		"</tr>";
-					
-						
-				while ($y < $numCourses) {
-					echo 		acourseIds[$y];
-					echo 		acourseNames[$y];
-					echo 		agrades[$y];
-					$y++;
-				}
+				// So I know all of the above works, time for the hard part
 				
-				//echo	"</table>";		
+				echo "<table>";
+				echo "<tr>";
+				echo "<th>Course ID</th>";
+				echo "<th>Course Name</th>";
+				echo "<th>Final Grade</th>";
+				echo "<tr>";
+				
+				
+				$z = 0;
+				while ($z < $numCourses) {
+					echo "<tr>";
+					echo "<td>$acourseIds[$z]</td>";
+					echo "<td>$acourseNames[$z]</td>";
+					echo "<td>$agrades[$z]</td>";
+					$z++;
+				}
+		
+				echo "</table>";
+				
 			?>
 		</div>
 
