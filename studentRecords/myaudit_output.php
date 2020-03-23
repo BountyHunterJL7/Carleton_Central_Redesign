@@ -40,15 +40,15 @@
 					<p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>                
 				</div>
 			</div>
-				<div class="info">
-					<div class="titleText">
-						<h1>Submit an Audit for <?php echo $_GET['audit']; ?> Students</h1>
-						<p>Click <b>Run Audit</b> to run an audit against your latest degree program.</p>
-						<p>Click <b>What-If?</b> to to find out how your courses would apply if you changed program elements.</p>
-					</div>
+			<div class="info">
+				<div class="titleText">
+					<h1>Submit an Audit for <?php echo $_GET['audit']; ?> Students</h1>
+					<p>Click <b>Run Audit</b> to run an audit against your latest degree program.</p>
+					<p>Click <b>What-If?</b> to to find out how your courses would apply if you changed program elements.</p>
 				</div>
+			</div>
 
-
+			<div class="forms">
 				<form>
 					<input type="checkbox" name = "1" id = "1">
 					<label for="1">Include Hypothetical Courses</label>
@@ -63,9 +63,7 @@
 					<input type="submit" value="Run Audit">
 					<br>
 					<input type="submit" value="What-If?">
-				</form>
-				
-				
+				</form>	
 			</div>
 		</div>
 
