@@ -40,31 +40,32 @@
 					<p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>                
 				</div>
 			</div>
-					<div class="info">
-						<div class="titleText">
-							<h1>Submit an Audit for <?php $_GET['auditTerm']; ?></h1>
-							<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-						</div>
-					</div>
-
-		<div class="forms">
-			<div>
 				<div class="info">
-							<div class="titleText">
-								<h1>Request Audit</h1>
-								<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-							</div>
-						</div>
+					<div class="titleText">
+						<h1>Submit an Audit for <?php echo $_GET['audit']; ?> Students</h1>
+						<p>Click <b>Run Audit</b> to run an audit against your latest degree program.</p>
+						<p>Click <b>What-If?</b> to to find out how your courses would apply if you changed program elements.</p>
+					</div>
+				</div>
 
-				<select id="semester" name="semseterList" form="semseterForm">
-				<option value="0">Select a Semester</option>
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
-				</select>
 
-				<form method="POST" action="mygrades.php" id="semesterForm" name="viewSemester">
-						<input type="submit">
-					</form>
+				<form>
+					<input type="checkbox" name = "1" id = "1">
+					<label for="1">Include Hypothetical Courses</label>
+					<br>
+					<p>Requirements</p>
+					<select>
+						<option>List All</option>
+						<option>Incomplete</option>
+						<option>Complete</option>
+					</select>
+					<br>
+					<input type="submit" value="Run Audit">
+					<br>
+					<input type="submit" value="What-If?">
+				</form>
+				
+				
 			</div>
 		</div>
 
