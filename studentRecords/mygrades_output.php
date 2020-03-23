@@ -47,31 +47,7 @@
 						</div>
 					</div>
 
-		<div class="forms">
-			<div>
-				
-				<form method="GET" action="mygrades_output.php"
-				
-			</div>
-
-			<div>
-				<div class="info">
-							<div class="titleText">
-								<h1>Request Audit</h1>
-								<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-							</div>
-						</div>
-
-				<select id="semester" name="semseterList" form="semseterForm">
-				<option value="0">Select a Semester</option>
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
-				</select>
-
-				<form method="POST" action="mygrades.php" id="semesterForm" name="viewSemester">
-						<input type="submit">
-					</form>
-			</div>
+		<div>
 		</div>
 
 	</div>
