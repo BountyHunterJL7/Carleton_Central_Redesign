@@ -71,6 +71,10 @@
 
         <!-- Text -->
         <p class="explainerParagraph">Register for courses. To add a course to your timeline, simply click the add button.</p>
+		
+		<!-- echo in a tag for best results, like this -->
+			<p><?php echo $_SESSION['fname']; ?></p>
+		
 
         <!-- Course list PHP requests -->
         <?php 
@@ -93,7 +97,7 @@
                 echo '<div class="course '.$course_number.'">
                 <h2>'.$row['CourseName'].'</h2>
                 <p>'.$row['CourseDescription'].'</p>
-                <form action="" method="POST" class="addForm">
+                <form action="" method="POST" class="addForm '.$row['CourseName'].'">
                     <input class="add" type="submit" name="submitButton" value="Add">
                 </form>
                 </div>';//End of echo
@@ -103,9 +107,8 @@
 
             if(isset($_POST['submitButton'])){
                 //Prepare sql query
-                //$query = "ADD * FROM CourseInfo";
-
-                echo $username;
+                $query = "ADD * FROM CourseInfo";
+                
             }
         ?>
 
