@@ -30,20 +30,22 @@
 	<div id="Wrapper">
 			<div class="program">
 				<h1 class="programTitle">Current Program</h1>
-				<p>Lorum Ipsum type beat</p><br>
+				<p>BIT Interactive Multimedia and Design</p><br>
+				<!-- Yeah I know the above should be from the databse, but ay it's 2020 -->
 				<div class="linkBox">
 					<img
 							id="raven-logo"
 							src="../media/program-status.png"
 					/>
 					<h3>Program Status</h3>
-					<p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>                
+					<p>You are in good standing.</p>
+					<p>Your CGPA is: 9.83/12.00</p>                
 				</div>
 			</div>
 					<div class="info">
 						<div class="titleText">
-							<h1>View Grades for <?php $_GET['term']; ?></h1>
-							<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+							<h1>View Grades for <?php echo $_GET['term']; ?></h1>
+							<p>You brought this upon yourself.</p>
 						</div>
 					</div>
 
