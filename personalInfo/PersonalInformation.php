@@ -29,14 +29,14 @@
     <div id="Wrapper">
         <div class="campusCard">
             <h1 class="cardTitle">Campus Card</h1>
-            <p>Lorum Ipsum type beat</p><br>
+            <p>Proud supporter of Better Carleton Central</p><br>
             <div class="linkBox">
                 <img
                         id="raven-logo"
                         src="../media/campus-card.png"
                 />
                 <h3>Carleton Central</h3>
-                <p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+                <p>View the status of your campus card.</p>
                 <div class="viewButton">
                     <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
                 </div>
@@ -46,7 +46,7 @@
         <div class="info">
     <div class="titleText">
         <h1>Student Information</h1>
-        <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+        <p>View or edit your personal information or emergency contact info.</p>
     </div>
 
     <div>
@@ -153,5 +153,8 @@
     </div>
 	</div>
     </div>
+	
+	<!-- Footer -->
+    <?php include '../templates/footer.php' ?>
 </body>
 </html>
