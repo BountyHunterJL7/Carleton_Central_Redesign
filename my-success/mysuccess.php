@@ -139,7 +139,7 @@
     <!-- End of Content -->
     
 
-    <!-- Footer -->
-    <?php include '../templates/footer.php' ?>
+   <!-- Footer -->
+    <?php include '../templates/footer.php' ?>  
 
 </body>
