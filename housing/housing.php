@@ -1,3 +1,11 @@
+<?php 
+	require_once('../server/server.php');
+	
+	if (isset($_POST['applied'])) {
+			$_SESSION['res'] = 999;
+	}
+?>
+
 <head>
     <title>Carleton Central | Housing</title>
 
@@ -33,14 +41,24 @@
 <div id="Wrapper">
             <div class="status">
                 <h1 class="cardTitle">Housing Status</h1>
-                <p>Lorum Ipsum type beat</p><br>
+                <p>View your housing status.</p><br>
                 <div class="linkBox">
                     <img
                             id="raven-logo"
                             src="../media/HousingResidence.png"
                     />
                     <h3>Housing Status</h3>
-                    <p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+					<?php 
+						if ($_SESSION['res'] == 0) {
+							echo "<p>You do not have a residency.</p>";
+						}
+						else if ($_SESSION['res'] == 999) {
+							echo "<p>Your residency application is pending.</p>";
+						}
+						else {
+							echo "<p>You are in a residency.</p>";
+						}
+					?>
                     <div class="viewButton">
                         <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
                     </div>
@@ -63,7 +81,7 @@
                 </select>
             </div>
 
-            <form>
+            <form method="POST" action="housing.php" name ="applied" id="applied">
                 <h2>
                     Student Information
                 </h2>
@@ -176,7 +194,7 @@
                 
 
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" name="applied">
             </form>
 
         </div>
