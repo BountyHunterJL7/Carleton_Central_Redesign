@@ -74,7 +74,7 @@
 
 
     <div class="container">
-    <p>Available support services for students at Carleton University</p>
+    <p>Available support services for students at Carleton University.</p>
 
         <div class="wrapper">
             <div class="links">
