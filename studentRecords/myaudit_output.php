@@ -42,18 +42,12 @@
 			</div>
 					<div class="info">
 						<div class="titleText">
-							<h1>View Grades</h1>
+							<h1>Submit an Audit for <?php $_GET['auditTerm']; ?></h1>
 							<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
 						</div>
 					</div>
 
 		<div class="forms">
-			<div>
-				
-				<form method="GET" action="mygrades_output.php"
-				
-			</div>
-
 			<div>
 				<div class="info">
 							<div class="titleText">

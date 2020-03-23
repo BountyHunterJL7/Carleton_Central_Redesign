@@ -68,10 +68,10 @@
 							</div>
 						</div>
 
-				<form method="GET" action="myaudit_output.php" name="auditTerm">
-					<select id="auditTerm" name="auditTerm">
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
+				<form method="GET" action="myaudit_output.php" name="audit">
+					<select id="auditTerm" name="audit">
+						<option value="Undergrad">Undergrad</option>
+						<option value="Graduate">Graduate</option>
 					</select>
 					<input type="submit" value="Submit">
 				</form>
