@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="cu-navbar">
         <?php include '../templates/navbar.php' ?>
     </div>
 
@@ -36,9 +36,8 @@
             </div>
             <input type="submit" name="update_personal" />
         </form>
-    </div>
-	
-	<?php 
+		
+		<?php 
 		if (isset($_POST['update_personal'])) {
 			
 			$phone = trim($_POST['phoneNumber']);		
@@ -52,9 +51,10 @@
 			$_SESSION['phone'] = $phone;
 			$_SESSION['address'] = $address;
 			
-			// header('location: http://ugrad.bitdegree.ca/~brandonwhite/PersonalInfo/PersonalInformation.php');
+			echo "<p>Information updated successfully.</p>";
 		}
-    ?>
+		?>
+    </div>
     
     <!-- Footer -->
     <?php include '../templates/footer.php' ?>
