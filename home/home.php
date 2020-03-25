@@ -4,6 +4,10 @@ require_once('../server/server.php');
 
 <head>
 	<title>Carleton Central | Home</title>
+
+	<!-- Google font import -->
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
 	<!-- Link to global stylesheet -->
 	<link rel="stylesheet" href="../css/global.css" />
 
@@ -13,8 +17,20 @@ require_once('../server/server.php');
 	<!-- Page icon -->
 	<link rel="shortcut icon" href="../media/carleton_mini_logo.png">
 
+	<!-- Include Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<script>
+		console.log($('#footer1'));
+
+		$(document).ready(function() {
+			$('#footer1').css('display', 'none');
+		});
+	</script>
+
 </head>
 
 <body>
@@ -28,29 +44,73 @@ require_once('../server/server.php');
 		<!-- Left section -->
 		<div class="flex left">
 			<div class="flex rounded shadow-medium calendar-section">
-				<div class="flex top"></div>
-				<div class="flex bottom"></div>
+				<div class="flex top">
+					<h1 id="date-title">
+						<?php
+						echo date("M d");
+						?>
+					</h1>
+				</div>
+				<div class="flex bottom">
+					<iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?height=200&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0" style="border-width:0; flex: auto;" width="auto" height="auto" frameborder="0" scrolling="no"></iframe>
+				</div>
 			</div>
 
 			<!-- Profile section -->
 			<div class="flex rounded shadow-medium profile-section">
-				<img id="profile-image" src="../media/home/profile_image.jpg" />
+				<div id="profile-header">
+					<img class="shadow-strong" id="profile-image" src="../media/home/sample_profile_image.jpeg" />
+					<div id="profile-image-background"></div>
+				</div>
 
-				<div>
-					<!-- Name -->
-					<p>Name: <?php
-								echo $_SESSION['fname'] . " " . $_SESSION['lname'];
-								?></p>
+				<!-- Name -->
+				<h2 class="text" id="profile-name">
+					<?php
+					echo $_SESSION['fname'] . " " . $_SESSION['lname'];
+					?>
 
-					<!-- Student ID -->
-					<p>Student ID: <?php
-									echo $_SESSION['id'];
-									?></p>
+					<!-- FOR TESTING CSS -->
+					Mark McGregor
+				</h2>
 
-					<!-- Email -->
-					<p>Cmail Address: <?php
-										echo $_SESSION['email'];
-										?></p>
+				<div id="profile-information">
+					<table>
+						<!-- Student ID -->
+						<tr id="id-row">
+							<td>
+								<p class="text" id="id-title">Student ID</p>
+							</td>
+
+							<td>
+								<p class="text" id="id">
+									<?php
+									echo $_SESSION['fname'] . " " . $_SESSION['id'];
+									?>
+
+									<!-- FOR TESTING CSS -->
+									101108410
+								</p>
+							</td>
+						</tr>
+
+						<!-- Email -->
+						<tr id="cmail-row">
+							<td>
+								<p class="text" id="email-title">Cmail</p>
+							</td>
+
+							<td>
+								<p class="text" id="email">
+									<?php
+									echo $_SESSION['fname'] . " " . $_SESSION['email'];
+									?>
+
+									<!-- FOR TESTING CSS -->
+									markmcgregor@cmail.carleton.ca
+								</p>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -92,5 +152,4 @@ require_once('../server/server.php');
 
 	<!-- Footer -->
 	<?php include '../templates/footer.php' ?>
-
 </body>

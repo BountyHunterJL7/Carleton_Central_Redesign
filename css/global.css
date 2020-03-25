@@ -31,7 +31,6 @@
 	--sidenav-gray: EFF1F4;
 	--light-gray: F0F0F0;
 	--main-red: DF3742;
-
 	--calendar-red: E66A6B;
 }
 
@@ -78,6 +77,10 @@ body {
 
 .shadow-medium {
 	box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.21);
+}
+
+.shadow-strong {
+	box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.51);
 }
 
 h1 {
