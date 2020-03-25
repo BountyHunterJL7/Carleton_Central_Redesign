@@ -50,17 +50,17 @@
 
 .timetable-section {
 	/* CREDIT: https://unsplash.com/photos/FoKO4DpXamQ */
-	background-image: url('../media/home/bg_student_timetable_small.jpg');
+	background-image: url('../media/home/bg_student_timetable_small.png');
 }
 
 .progress-section {
 	/* CREDIT: https://unsplash.com/photos/F8t2VGnI47I */
-	background-image: url('../media/home/bg_academic_progress_small.jpg');
+	background-image: url('../media/home/bg_academic_progress_small.png');
 }
 
 .amountToPay-section {
 	/* CREDIT: https://unsplash.com/photos/3-Tc_5LROrM */
-	background-image: url('../media/home/bg_amount_to_pay_small.jpg');
+	background-image: url('../media/home/bg_amount_to_pay_small.png');
 }
 
 .section .button {
