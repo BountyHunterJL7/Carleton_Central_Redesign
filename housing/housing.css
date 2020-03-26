@@ -21,6 +21,10 @@ body{
     
 }
 
+.content{
+    margin:0;
+}
+
 .linkBox{
     background-color: white;
     border-radius: 10pt;
