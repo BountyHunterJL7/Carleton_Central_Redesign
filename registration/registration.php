@@ -122,7 +122,8 @@ require_once('../server/server.php');
                 echo "<p>Error</p>";
             }
                 
-        }
+        }//End of if statement
+
         ?>
 
         <!-- View online courses button-->
