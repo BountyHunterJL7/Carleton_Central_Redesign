@@ -1,7 +1,3 @@
-<?php
-require_once('../server/server.php');
-?>
-
 <head>
 	<title>Carleton Central | Home</title>
 
