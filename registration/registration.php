@@ -71,10 +71,6 @@
 
         <!-- Text -->
         <p class="explainerParagraph">Register for courses. To add a course to your timeline, simply click the add button.</p>
-		
-		<!-- echo in a tag for best results, like this -->
-			<p><?php echo $_SESSION['fname']; ?></p>
-		
 
         <!-- Course list PHP requests -->
         <?php 
@@ -99,6 +95,7 @@
                 <p>'.$row['CourseDescription'].'</p>
                 <form action="" method="POST" class="addForm '.$row['CourseName'].'">
                     <input class="add" type="submit" name="submitButton" value="Add">
+                    <input type="hidden" name="courseName" value="'.$row['CourseName'].'">
                 </form>
                 </div>';//End of echo
             }
@@ -106,8 +103,22 @@
             echo '</div>';
 
             if(isset($_POST['submitButton'])){
+                $course = $_POST['courseName'];
+
                 //Prepare sql query
-                $query = "ADD * FROM CourseInfo";
+                $query = "
+                INSERT INTO ListOfCourses (CourseList_ID, Course_ID)
+                SELECT '".$_SESSION['coursesid']."', Course_ID
+                FROM CourseInfo 
+                WHERE CourseName='".$course."'";
+
+                $result = $conn->query($query);
+
+                if($result) {
+                    echo "<p>Successfully registered in ".$course."!</p>";
+                } else {
+                    echo "<p>Error</p>";
+                }
                 
             }
         ?>

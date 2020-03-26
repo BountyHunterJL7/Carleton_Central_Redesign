@@ -109,7 +109,7 @@ select {
     height: 11%;
 }
 
-.course > .add:hover {
+.course > .addForm > .add:hover {
     background-color: #dcdcdc;
 }
 
