@@ -68,9 +68,6 @@ require_once('../server/server.php');
 					<?php
 					echo $_SESSION['fname'] . " " . $_SESSION['lname'];
 					?>
-
-					<!-- FOR TESTING CSS -->
-					Mark McGregor
 				</h2>
 
 				<div id="profile-information">
@@ -86,9 +83,6 @@ require_once('../server/server.php');
 									<?php
 									echo $_SESSION['fname'] . " " . $_SESSION['id'];
 									?>
-
-									<!-- FOR TESTING CSS -->
-									101108410
 								</p>
 							</td>
 						</tr>
@@ -104,9 +98,6 @@ require_once('../server/server.php');
 									<?php
 									echo $_SESSION['fname'] . " " . $_SESSION['email'];
 									?>
-
-									<!-- FOR TESTING CSS -->
-									markmcgregor@cmail.carleton.ca
 								</p>
 							</td>
 						</tr>
