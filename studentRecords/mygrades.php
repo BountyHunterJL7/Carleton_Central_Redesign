@@ -52,12 +52,12 @@
 		<div class="forms">
 			<div>
 				
-				<form method="GET" action="mygrades_output.php" name="term">
+				<form method="GET" action="mygrades_output.php" name="selectTerm">
 					<select id="term" name="term">
 						<option value="Fall 2019">Fall 2019</option>
 						<option value="Winter 2020">Winter 2020</option>
 					</select>
-					<input type="submit" value="Submit" name="term">
+					<input type="submit" value="Submit">
 				</form>
 				
 			</div>

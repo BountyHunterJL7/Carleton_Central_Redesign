@@ -49,7 +49,7 @@
 						</div>
 					</div>
 
-		<div class="php">
+		<div>
 			<?php 
 				
 				// Set useful variables.
