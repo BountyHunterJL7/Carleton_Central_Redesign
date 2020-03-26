@@ -81,7 +81,7 @@ require_once('../server/server.php');
 							<td>
 								<p class="text" id="id">
 									<?php
-									echo $_SESSION['fname'] . " " . $_SESSION['id'];
+									echo $_SESSION['id'];
 									?>
 								</p>
 							</td>
@@ -96,7 +96,7 @@ require_once('../server/server.php');
 							<td>
 								<p class="text" id="email">
 									<?php
-									echo $_SESSION['fname'] . " " . $_SESSION['email'];
+									echo $_SESSION['email'];
 									?>
 								</p>
 							</td>
