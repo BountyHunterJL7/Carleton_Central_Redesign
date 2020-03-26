@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
+
 </head>
 
 <body>
@@ -74,19 +74,19 @@
 
 
     <div class="container">
-    <p>Available support services for students at Carleton University.</p>
+        <p>Available support services for students at Carleton University.</p>
 
         <div class="wrapper">
             <div class="links">
-                <img id="raven-logo" src="../media/mySuccess.png"/>
+                <img id="raven-logo" src="../media/mySuccess.png" />
                 <button onclick="window.location.href = 'https://mycareer.carleton.ca/home.htm';" class="view" type="button">MySuccess Portal</button>
             </div>
             <div class="links">
-                <img id="raven-logo" src="../media/pmc.png"/>
+                <img id="raven-logo" src="../media/pmc.png" />
                 <button onclick="window.location.href = 'https://carleton.ca/pmc/';" class="view" type="button">MyPMC</button>
             </div>
             <div class="links">
-                <img id="raven-logo" src="../media/academic-support.png"/>
+                <img id="raven-logo" src="../media/academic-support.png" />
                 <button onclick="window.location.href = 'https://carleton.ca/academicadvising/';" class="view" type="button">Academic Advising Centre</button>
             </div>
         </div>
