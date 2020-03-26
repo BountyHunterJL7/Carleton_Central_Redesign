@@ -1,4 +1,10 @@
-
+<?php 
+	require_once('../server/server.php');
+	
+	if (isset($_POST['applied'])) {
+			$_SESSION['res'] = 999;
+	}
+?>
 
 <head>
     <title>Carleton Central | Housing</title>
@@ -194,7 +200,7 @@
         </div>
 
     </div>
-                        
+</div>
 
     <!-- End of Content -->
 
