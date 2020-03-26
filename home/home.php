@@ -57,7 +57,7 @@ require_once('../server/server.php');
 			</div>
 
 			<!-- Profile section -->
-			<div class="flex rounded shadow-medium profile-section">
+			<div class="flex rounded shadow-medium profile-section" onclick="window.location = '../personalInfo/PersonalInformation.php'">
 				<div id="profile-header">
 					<img class="shadow-strong" id="profile-image" src="../media/home/sample_profile_image.jpeg" />
 					<div id="profile-image-background"></div>

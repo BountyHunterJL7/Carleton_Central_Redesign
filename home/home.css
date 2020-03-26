@@ -50,6 +50,8 @@
 	overflow: hidden;
 	flex-direction: column;
 	justify-content: center;
+
+	cursor: pointer;
 }
 
 #profile-header {
