@@ -152,8 +152,10 @@
 }
 
 .section {
-	object-position: 100%;
-	background-size: cover;
+	object-fit: cover;
+	background-size: 100%;
+	object-position: 50%;
+	/* opacity: .5; */
 	cursor: pointer;
 	margin: 10px;
 	background-color: var(--main-ui-front);

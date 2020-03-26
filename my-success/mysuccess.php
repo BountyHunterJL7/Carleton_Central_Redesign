@@ -32,7 +32,7 @@
 
 
     <!-- Content -->
-    <div class="content">
+    <div>
         <!-- Carousel code -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -75,11 +75,11 @@
         </div>
 
         <div class="wrapper">
-            <div class="links">
-                <img id="raven-logo" src="../media/mySuccess.png" />
+        <div class="links">
+                <img id="raven-logo" src="../media/mySuccess.png"/>
                 <button onclick="window.location.href = 'https://mycareer.carleton.ca';" class="view" type="button">MySuccess</button>
-            </div>
         </div>
+    </div>
 
         <div class="container">
             <div class="terms">
@@ -102,44 +102,44 @@
                 <h2>
                     Contact
                 </h2>
-
+                
                 <p>
                     Career Services, 401 Tory Building <br>
                     613-520-6611 <br>
                     <a href="mailto:career@carleton.ca">career@carleton.ca</a>
                 </p>
-
+                
                 <p>
-                    Co-operative Education, 1400 CTTC Building <br>
+                    Co-operative Education, 1400 CTTC Building <br> 
                     613-520-4331 <br>
                     <a href="mailto:co-opprogram@carleton.ca">co-opprogram@carleton.ca</a>
                 </p>
-
+                
                 <p>
                     Academic Advising Centre, 302 Tory Building <br>
                     613-520-7850 <br>
                     <a href="mailto:academicadvising@carleton.ca">academicadvising@carleton.ca</a>
                 </p>
-
+                
                 <p>
                     Centre for Student Academic Support, 4th Floor MacOdrum Library <br>
                     613-520-3822 <br>
                     <a href="mailto:csas@carleton.ca">csas@carleton.ca</a>
                 </p>
-
+                
                 <p>
                     Science Student Success Centre (SSSC), 3431 Herzberg Laboratories <br>
                     613-520-2600 ext. 3111 <br>
                     <a href="mailto:sssc@carleton.ca">sssc@carleton.ca</a>
-                </p>
+                </p> 
             </div>
         </div>
 
     </div>
     <!-- End of Content -->
+    
 
-
-    <!-- Footer -->
-    <?php include '../templates/footer.php' ?>
+   <!-- Footer -->
+    <?php include '../templates/footer.php' ?>  
 
 </body>
