@@ -28,15 +28,10 @@
 :root {
 	--main-black: black;
 	--main-ui-front: white;
-	--sidenav-gray: EFF1F4;
-	--light-gray: F0F0F0;
-	--main-red: DF3742;
-	--calendar-red: E66A6B;
-}
-
-* {
-	/* For debugging: */
-	/* border: 1px solid red; */
+	--sidenav-gray: #eff1f4;
+	--light-gray: #f0f0f0;
+	--main-red: #df3742;
+	--calendar-red: #e66a6b;
 }
 
 body {
