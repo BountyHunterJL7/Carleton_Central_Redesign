@@ -27,14 +27,14 @@
         <h1>
             Student Records
         </h1>
-        <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+        <p>View and manage your student records.</p>
 
         <!-- List of options -->
 
         <!-- Changing from a list to a set of divs because I think it will be easier to implement the CSS that way. Like give them each a class of "card" and id of "left", "middle", or "right" -->
         <div id="wrapper">
             <div class="support">
-                <img id="raven-logo" src="../media/support-service.png"/>
+                <img id="raven-logo" src="../media/support-service.png" />
                 <h2>
                     Support Services
                 </h2>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="admissions">
-                <img id="raven-logo" src="../media/admission.png"/>
+                <img id="raven-logo" src="../media/Admission.png" />
                 <h2>
                     Admissions
                 </h2>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="grades">
-                <img id="raven-logo" src="../media/myGrades.png"/>
+                <img id="raven-logo" src="../media/myGrades.png" />
                 <h2>
                     MyGrades
                 </h2>

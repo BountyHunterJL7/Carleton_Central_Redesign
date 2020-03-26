@@ -30,20 +30,22 @@
 	<div id="Wrapper">
 			<div class="program">
 				<h1 class="programTitle">Current Program</h1>
-				<p>Lorum Ipsum type beat</p><br>
+				<p>BIT Interactive Multimedia and Design</p><br>
+				<!-- Yeah I know the above should be from the databse, but ay it's 2020 -->
 				<div class="linkBox">
 					<img
 							id="raven-logo"
 							src="../media/program-status.png"
 					/>
 					<h3>Program Status</h3>
-					<p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>                
+					<p>You are in good standing.</p>
+					<p>Your CGPA is: 9.83/12.00</p>                
 				</div>
 			</div>
 					<div class="info">
 						<div class="titleText">
 							<h1>View Grades</h1>
-							<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+							<p>View your grades for a chosen semester.</p>
 						</div>
 					</div>
 
@@ -64,14 +66,14 @@
 				<div class="info">
 							<div class="titleText">
 								<h1>Request Audit</h1>
-								<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
+								<p>Request an audit for your current program.</p>
 							</div>
 						</div>
 
-				<form method="GET" action="myaudit_output.php" name="auditTerm">
-					<select id="auditTerm" name="auditTerm">
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
+				<form method="GET" action="myaudit_output.php" name="audit">
+					<select id="auditTerm" name="audit">
+						<option value="Undergrad">Undergrad</option>
+						<option value="Graduate">Graduate</option>
 					</select>
 					<input type="submit" value="Submit">
 				</form>

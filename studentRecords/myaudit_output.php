@@ -30,47 +30,42 @@
 	<div id="Wrapper">
 			<div class="program">
 				<h1 class="programTitle">Current Program</h1>
-				<p>Lorum Ipsum type beat</p><br>
+				<p>BIT Interactive Multimedia and Design</p><br>
+				<!-- Yeah I know the above should be from the databse, but ay it's 2020 -->
 				<div class="linkBox">
 					<img
 							id="raven-logo"
 							src="../media/program-status.png"
 					/>
 					<h3>Program Status</h3>
-					<p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>                
+					<p>You are in good standing.</p>
+					<p>Your CGPA is: 9.83/12.00</p>                
 				</div>
 			</div>
-					<div class="info">
-						<div class="titleText">
-							<h1>View Grades</h1>
-							<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-						</div>
-					</div>
-
-		<div class="forms">
-			<div>
-				
-				<form method="GET" action="mygrades_output.php"
-				
+			<div class="info">
+				<div class="titleText">
+					<h1>Submit an Audit for <?php echo $_GET['audit']; ?> Students</h1>
+					<p>Click <b>Run Audit</b> to run an audit against your latest degree program.</p>
+					<p>Click <b>What-If?</b> to to find out how your courses would apply if you changed program elements.</p>
+				</div>
 			</div>
 
-			<div>
-				<div class="info">
-							<div class="titleText">
-								<h1>Request Audit</h1>
-								<p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-							</div>
-						</div>
-
-				<select id="semester" name="semseterList" form="semseterForm">
-				<option value="0">Select a Semester</option>
-						<option value="Fall 2019">Fall 2019</option>
-						<option value="Winter 2020">Winter 2020</option>
-				</select>
-
-				<form method="POST" action="mygrades.php" id="semesterForm" name="viewSemester">
-						<input type="submit">
-					</form>
+			<div class="forms">
+				<form>
+					<input type="checkbox" name = "1" id = "1">
+					<label for="1">Include Hypothetical Courses</label>
+					<br>
+					<p>Requirements</p>
+					<select>
+						<option>List All</option>
+						<option>Incomplete</option>
+						<option>Complete</option>
+					</select>
+					<br>
+					<input type="submit" value="Run Audit">
+					<br>
+					<input type="submit" value="What-If?">
+				</form>	
 			</div>
 		</div>
 

@@ -30,13 +30,13 @@ button:hover {
 
 .content{
     text-align: center;
-    margin-top:4%;
+    margin: 5% 0 10%;
 }
 
 #wrapper{
     margin-top:4%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .support{

@@ -1,9 +1,10 @@
-<?php 
-    require_once('../server/server.php');
-    //session_start();
+<?php
+require_once('../server/server.php');
+//session_start();
 ?>
 
 <!DOCTYPE html>
+
 <head>
     <title>Carleton Central | Registration</title>
 
@@ -73,64 +74,63 @@
         <p class="explainerParagraph">Register for courses. To add a course to your timeline, simply click the add button.</p>
 
         <!-- Course list PHP requests -->
-        <?php 
-            //SQL query to fetch course info
-            $query = "SELECT * FROM CourseInfo";
+        <?php
+        //SQL query to fetch course info
+        $query = "SELECT * FROM CourseInfo";
 
-            //Connect and make the sql request
-            $result = $conn->query($query);
+        //Connect and make the sql request
+        $result = $conn->query($query);
 
-            //Variable used to assign specific classes to each course
-            $course_number = 0;
+        //Variable used to assign specific classes to each course
+        $course_number = 0;
 
-            echo '<div id="wrapper">';
+        echo '<div id="wrapper">';
 
-            while ($row = $result->fetch_assoc()) {
-                //Every time we go through the loop, it's a new course
-                $course_number++;
+        while ($row = $result->fetch_assoc()) {
+            //Every time we go through the loop, it's a new course
+            $course_number++;
 
-                //Echo the div containg the course information
-                echo '<div class="course '.$course_number.'">
-                <h2>'.$row['CourseName'].'</h2>
-                <p>'.$row['CourseDescription'].'</p>
-                <form action="" method="POST" class="addForm '.$row['CourseName'].'">
+            //Echo the div containg the course information
+            echo '<div class="course ' . $course_number . '">
+                <h2>' . $row['CourseName'] . '</h2>
+                <p>' . $row['CourseDescription'] . '</p>
+                <form action="" method="POST" class="addForm ' . $row['CourseName'] . '">
                     <input class="add" type="submit" name="submitButton" value="Add">
                     <input type="hidden" name="courseName" value="'.$row['CourseName'].'">
                 </form>
-                </div>';//End of echo
-            }
-            
-            echo '</div>';
+                </div>'; //End of echo
+        }//End of while loop
 
-            if(isset($_POST['submitButton'])){
-                $course = $_POST['courseName'];
+        echo '</div>';
 
-                //Prepare sql query
-                $query = "
+        if (isset($_POST['submitButton'])) {
+            $course = $_POST['courseName'];
+            //echo $course;
+
+            //Prepare sql query
+            $query = "
                 INSERT INTO ListOfCourses (CourseList_ID, Course_ID)
-                SELECT '".$_SESSION['coursesid']."', Course_ID
+                SELECT '" . $_SESSION['coursesid'] . "', Course_ID
                 FROM CourseInfo 
-                WHERE CourseName='".$course."'";
+                WHERE CourseName='" . $course . "'";
 
-                $result = $conn->query($query);
+            $result = $conn->query($query);
 
-                if($result) {
-                    echo "<p>Successfully registered in ".$course."!</p>";
-                } else {
-                    echo "<p>Error</p>";
-                }
-                
+            if($result) {
+                echo "<p>Successfully registered in ".$course."!</p>";
+            } else {
+                echo "<p>Error</p>";
             }
+                
+        }
         ?>
 
         <!-- View online courses button-->
         <button class="viewOnlineCourses redButton" type="button">View Online Courses</button>
 
         <!-- Student timetable -->
-
-        <!-- Footer -->
-        <?php include '../templates/footer.php' ?>
-
     </div><!-- End of div content -->
 
+    <!-- Footer -->
+    <?php include '../templates/footer.php' ?>
 </body>

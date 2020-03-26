@@ -65,7 +65,7 @@
         </div>
 
         <!-- Explainer paragraph -->
-        <p class="explainerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="explainerParagraph">Apply for awards, scholarships, and bursaries.</p>
 
         <!-- Awards list -->
         <ul>

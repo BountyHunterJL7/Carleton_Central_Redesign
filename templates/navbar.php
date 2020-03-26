@@ -116,7 +116,7 @@ echo '
         </div>
         
         <div class="flex middle" id="navigationDiv">
-            <a href="../PersonalInfo/PersonalInformation.php" class="topNav">Personal Info</a>
+            <a href="../personalInfo/PersonalInformation.php" class="topNav">Personal Info</a>
 
             <a href="../studentRecords/studentRecords.php" class="topNav">Student Records</a>
 
@@ -185,4 +185,3 @@ echo '
 
 	
 ';
-?>

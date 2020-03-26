@@ -1,159 +1,174 @@
-body{
-    font: normal 12pt arial !important;
-    color:black;
-    background-color:white;
+body {
+	font: normal 12pt arial !important;
+	color: black;
+	background-color: white;
 }
 
-#raven-logo{
-    width:35%;
+#raven-logo {
+	width: 35%;
 }
 
-.status{
-    background-Color:#f0f0f0;
-    margin-bottom: 0;
-    padding-left: 3%;
-    padding-right:3%;
-    padding-top:7%;
-    padding-bottom:45%;
-    text-align:center;
-    width:18%;
-    float:left;
-    
+.status {
+	background-color: #f0f0f0;
+	margin-bottom: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 7%;
+	padding-bottom: 45%;
+	text-align: center;
+	width: 18%;
+	float: left;
 }
 
-.linkBox{
-    background-color: white;
-    border-radius: 10pt;
-    padding:4%;
-    position: relative;
-    box-shadow: 0px 0px 8px #b8b8b8;
-    }
-    
-    /* Set a style for all buttons */
-    button {
-        background-color: #CF112D;
-        color: white;
-        font-size: 14pt;
-        font-weight: bold;
-        padding: 1.5% 10%;
-        border: none;
-        border-width: 1pt;
-        border-radius: 30pt;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-    
-        /* Add a hover effect for buttons */
-        button:hover {
-            background-color: rgb(160, 15, 36);
-            color: white;
-            
-        }
+.content {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
 
-        .titleText{
-            text-align:center;
-            padding-top:8%;
-            padding-bottom:4%;
-            }
-            
-            .apply{
-            color:black;
-            background-color:white;
-            margin-right:0%;
-            margin-left: 13%;
-            
-            float:left;
-            }
-            
-            input[type=text] {
-                color:black;
-                border: none;
-                border-bottom: 1pt solid rgb(119, 119, 119);
-                width:100%;
-              }
-            
-              /* Set a style for all buttons */
-              input[type=submit] {
-                background-color: #e6e6e6;
-                color: black;
-                font-size: 10pt;
-                font-weight: bold;
-                padding: 1% 3%;
-                border: none;
-                border-width: 1pt;
-                border-radius: 30pt;
-                cursor: pointer;
-                transition: 0.2s;
-                margin-top:1%;
-            }
-            
-                /* Add a hover effect for buttons */
-                input[type=submit]:hover {
-                    background-color: rgb(202, 202, 202);		
-                }
-                select::-ms-expand {	display: none; }
-                select { 
-                    -webkit-appearance: none;
-                    appearance: none; 
-                    outline: 0; 
-                    background: white; 
-                    background-image: none; 
-                    width: 30%; 
-                    height: 100%; 
-                    font-size:12pt;
-                    color: black; 
-                    cursor: pointer; 
-                    border: none; 
-                    border-bottom: 1pt solid rgb(119, 119, 119);
-                    border-radius:3px;
-                    border-width: 1pt;
-                    border-radius: 0%;
-                    
-                    background-image: url("../media/selectMenuArrow.png");
-    background-repeat: no-repeat, repeat;
-    background-position: right 0.4em top 50%, 0 0;
-    background-size: 5%;
-                } 
-                /*makes the little arrows on the default select invisibe*/
-                @-moz-document url-prefix(){
-                    .ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
-                  .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
-                }
+.linkBox {
+	background-color: white;
+	border-radius: 10pt;
+	padding: 4%;
+	position: relative;
+	box-shadow: 0px 0px 8px #b8b8b8;
+}
 
+/* Set a style for all buttons */
+button {
+	background-color: #cf112d;
+	color: white;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 1.5% 10%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+}
 
-                .select { 
-                    position: relative; 
-                    display: block; 
-                    width: 15em; 
-                    height: 2em; 
-                    line-height: 3; 
-                    overflow: hidden; 
-                    border-radius: .25em; 
-                    padding-bottom:10px; 
-                } 
+/* Add a hover effect for buttons */
+button:hover {
+	background-color: rgb(160, 15, 36);
+	color: white;
+}
 
-.termSelect{
-                    margin:3%;
-                    padding-left:3%;
-                    padding-top:5pt;
-                    padding-bottom:5pt;
-                    padding-right:3%;
-                    appearance: none; 
-                    outline: 0; 
-                    background: white; 
-                    background-image: none; 
-                    width: 30%; 
-                    height: 100%; 
-                    font-size: 20;
-                    color: black; 
-                    cursor: pointer;
-                    border-radius: 25%;
-                    border: 1pt solid rgb(119, 119, 119); 
-                    border-width: 1pt;
-                     border-radius: 30pt;
+.titleText {
+	text-align: center;
+	padding-top: 8%;
+	padding-bottom: 4%;
+}
 
-                     background-image: url("../media/selectMenuArrow.png");
-    background-repeat: no-repeat, repeat;
-    background-position: right 0.4em top 50%, 0 0;
-    background-size: 5%;
+.apply {
+	color: black;
+	background-color: white;
+	margin-right: 0%;
+	margin-left: 13%;
+	margin-bottom: 10%;
+	float: left;
+}
+
+input[type='text'] {
+	color: black;
+	border: none;
+	border-bottom: 1pt solid rgb(119, 119, 119);
+	width: 100%;
+}
+
+/* Set a style for all buttons */
+input[type='submit'] {
+	background-color: #e6e6e6;
+	color: black;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 1% 3%;
+	border: none;
+	border-width: 1pt;
+	border-radius: 30pt;
+	cursor: pointer;
+	transition: 0.2s;
+	margin-top: 1%;
+}
+
+/* Add a hover effect for buttons */
+input[type='submit']:hover {
+	background-color: rgb(202, 202, 202);
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: 0;
+	background: white;
+	background-image: none;
+	width: 30%;
+	height: 100%;
+	font-size: 12pt;
+	color: black;
+	cursor: pointer;
+	border: none;
+	border-bottom: 1pt solid rgb(119, 119, 119);
+	border-radius: 3px;
+	border-width: 1pt;
+	border-radius: 0%;
+
+	background-image: url('../media/selectMenuArrow.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.4em top 50%, 0 0;
+	background-size: 5%;
+}
+/*makes the little arrows on the default select invisibe*/
+@-moz-document url-prefix() {
+	.ui-select {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+	}
+	.ui-select select {
+		width: 110%;
+		background-position: right 30px center !important;
+		border: none !important;
+	}
+}
+
+.select {
+	position: relative;
+	display: block;
+	width: 15em;
+	height: 2em;
+	line-height: 3;
+	overflow: hidden;
+	border-radius: 0.25em;
+	padding-bottom: 10px;
+}
+
+.termSelect {
+	margin: 3%;
+	padding-left: 3%;
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+	padding-right: 3%;
+	appearance: none;
+	outline: 0;
+	background: white;
+	background-image: none;
+	width: 30%;
+	height: 100%;
+	font-size: 20;
+	color: black;
+	cursor: pointer;
+	border-radius: 25%;
+	border: 1pt solid rgb(119, 119, 119);
+	border-width: 1pt;
+	border-radius: 30pt;
+
+	background-image: url('../media/selectMenuArrow.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.4em top 50%, 0 0;
+	background-size: 5%;
 }

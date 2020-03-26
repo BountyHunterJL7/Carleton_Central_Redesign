@@ -1,3 +1,11 @@
+<?php
+require_once('../server/server.php');
+
+if (isset($_POST['applied'])) {
+    $_SESSION['res'] = 999;
+}
+?>
+
 <head>
     <title>Carleton Central | Housing</title>
 
@@ -30,66 +38,27 @@
     <!-- Content -->
     <div class="content">
 
-        <!-- 
-            **************************************************
-            *                                                *
-            * These will become hidden or unhidden depending *
-            * on which page you click. View housing is the   *
-            * default page.                                  *
-            *                                                *
-            **************************************************
-        -->
-
-        <!-- View Housing -->
-
-
-            <!-- 
-                **********************************
-                * Template for House Image Cards *
-                **********************************
-
-                (Clicking the image opens a larger view of the image. Not sure if this requires a link or not yet.)
-    
-                (Clicking the view details button could open up a popup where you can view details and click a button to apply.)
-                
-                <a href=" "><img src=" " alt =" " height=" " width=" "></a>
-                <button type="button">View Details</button>
-                
-                **********************************
-                
-                (On View Details:)
-                (This will be populated from the SQL database possibly.)
-
-                <span>
-                    <h2></h2>
-                    <h3></h3>
-                    <img alt="exterior">
-                    <img alt="interior">
-                    <img alt="floorplan">
-                    <p></p>
-                    <button type="button">Apply</button>
-                </span>
-
-                (When you click apply, you will be taken to the application page and that house's details will be autofilled.)
-            -->
-
-<div id="Wrapper">
-            <div class="status">
-                <h1 class="cardTitle">Housing Status</h1>
-                <p>Lorum Ipsum type beat</p><br>
-                <div class="linkBox">
-                    <img
-                            id="raven-logo"
-                            src="../media/HousingResidence.png"
-                    />
-                    <h3>Housing Status</h3>
-                    <p>Lorum Ipsum type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-                    <div class="viewButton">
-                        <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
-                    </div>
-                    
+        <div class="status">
+            <h1 class="cardTitle">Housing Status</h1>
+            <p>View your housing status.</p><br>
+            <div class="linkBox">
+                <img id="raven-logo" src="../media/HousingResidence.png" />
+                <h3>Housing Status</h3>
+                <?php
+                if ($_SESSION['res'] == 0) {
+                    echo "<p>You do not have a residency.</p>";
+                } else if ($_SESSION['res'] == 999) {
+                    echo "<p>Your residency application is pending.</p>";
+                } else {
+                    echo "<p>You are in a residency.</p>";
+                }
+                ?>
+                <div class="viewButton">
+                    <button onclick="window.location.href='https://wcc.carleton.ca/student/welcome.php';">View</button>
                 </div>
+
             </div>
+        </div>
         <!-- End of View Housing -->
 
 
@@ -97,16 +66,16 @@
         <div class="apply">
             <div class="titleText">
                 <h1>Housing Application Form</h1>
-                <p>Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat Lorum ipsum dolar type beat</p>
-                <select name="term" class ="termSelect">
-                <option value="0">Select Term</option>
-                <option value="1">Winter</option>
-                <option value="2">Summer</option>
-                <option value="3">Fall</option>
+                <p><a href="https://housing.carleton.ca/our-buildings/">View our housing choices.</a></p>
+                <select name="term" class="termSelect">
+                    <option value="0">Select Term</option>
+                    <option value="1">Winter</option>
+                    <option value="2">Summer</option>
+                    <option value="3">Fall</option>
                 </select>
             </div>
 
-            <form>
+            <form method="POST" action="housing.php" name="applied" id="applied">
                 <h2>
                     Student Information
                 </h2>
@@ -126,7 +95,7 @@
                 <br><br>
 
                 <select name="year">
-                <option value="0">Year Standing</option>
+                    <option value="0">Year Standing</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
                     <option value="three">Three</option>
@@ -155,9 +124,9 @@
                 <input type="text" name="postal">
                 <br><br>
 
-                
+
                 <select name="residency">
-                <option value="0">Residence Name</option>
+                    <option value="0">Residence Name</option>
                     <option value="dundasStormont">Dundas and Stormont</option>
                     <option value="frontenac">Frontenac</option>
                     <option value="glengarry">Glengarry</option>
@@ -170,7 +139,7 @@
                 <br><br>
 
                 <select name="residency">
-                <option value="0">Floor</option>
+                    <option value="0">Floor</option>
                     <!-- We need to find a way to populate these with the room numbers in the database. They can be pretty random, as long as it works -->
                     <option value="1">1</option>
                     <option value="1">2</option>
@@ -189,44 +158,40 @@
 
                 <a href="https://housing.carleton.ca/residence-and-meal-plan-fees/traditional-residence-fees/">Click here for current deposit fees</a>
                 <br><br><br><br>
-                
+
                 <h2>
                     Payment Information
                 </h2>
                 <br>
                 Name on card:
-                
+
                 <input type="text" name="creditName">
                 <br><br>
-                
+
 
                 Card number:
-                
+
                 <input type="text" name="creditNumber">
                 <br><br>
-                
+
 
                 Expiration (mm/yy):
-                
+
                 <input type="text" name="creditExpiration">
                 <br><br>
-                
+
 
                 Security code:
-                
+
                 <input type="text" name="creditSecurity">
                 <br><br>
-                
 
 
-                <input type="submit" value="Submit">
+
+                <input type="submit" value="Submit" name="applied">
             </form>
-
         </div>
-
     </div>
-</div>
-
     <!-- End of Content -->
 
     <!-- Footer -->

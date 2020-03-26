@@ -1,5 +1,6 @@
 .content {
 	flex-direction: row;
+	margin-bottom: 0;
 }
 
 .content > .left {
@@ -28,6 +29,19 @@
 
 .content > .left > .calendar-section > .top {
 	background-color: var(--calendar-red);
+	overflow: hidden;
+	position: relative;
+	height: 25%;
+}
+
+.calendar-section #date-title {
+	margin: auto 0.5em;
+	color: white;
+	height: fit-content;
+	font-family: 'Anton', sans-serif;
+	font-size: 3em;
+	text-align: start;
+	flex: auto;
 }
 
 .content > .left > .profile-section {
@@ -36,10 +50,64 @@
 	overflow: hidden;
 	flex-direction: column;
 	justify-content: center;
+
+	cursor: pointer;
 }
 
-.content > .left > .profile-section > #profile-image {
-	margin: auto;
+#profile-header {
+	display: flex;
+	position: relative;
+}
+
+#profile-header #profile-image {
+	margin: 1em auto 0;
+	z-index: 2;
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+
+	/* Used to make the profile image cover the whole circle area */
+	object-fit: cover;
+	object-position: center;
+}
+
+#profile-header #profile-image-background {
+	width: 100%;
+	height: 50%;
+	background-color: var(--calendar-red);
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 55%;
+}
+
+#profile-information {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	justify-content: center;
+	margin: 0 1em 0 1em;
+}
+
+#profile-information tr {
+	display: flex;
+	margin-bottom: 0.5em;
+}
+
+#profile-information tr td:first-child {
+	font-weight: 600;
+}
+
+#profile-information tr td:last-child {
+	text-align: end;
+	text-overflow: ellipsis;
+	flex: auto;
+}
+
+#profile-name {
+	text-align: center;
+	font-weight: normal;
+	margin-top: 0.3em;
 }
 
 .content > .middle {
@@ -50,17 +118,17 @@
 
 .timetable-section {
 	/* CREDIT: https://unsplash.com/photos/FoKO4DpXamQ */
-	background-image: url('../media/home/bg_student_timetable_small.jpg');
+	background-image: url('../media/home/bg_student_timetable_small.png');
 }
 
 .progress-section {
 	/* CREDIT: https://unsplash.com/photos/F8t2VGnI47I */
-	background-image: url('../media/home/bg_academic_progress_small.jpg');
+	background-image: url('../media/home/bg_academic_progress_small.png');
 }
 
 .amountToPay-section {
 	/* CREDIT: https://unsplash.com/photos/3-Tc_5LROrM */
-	background-image: url('../media/home/bg_amount_to_pay_small.jpg');
+	background-image: url('../media/home/bg_amount_to_pay_small.png');
 }
 
 .section .button {
@@ -87,10 +155,8 @@
 }
 
 .section {
-	object-fit: cover;
-	background-size: 100%;
-	object-position: 50%;
-	/* opacity: .5; */
+	object-position: 100%;
+	background-size: cover;
 	cursor: pointer;
 	margin: 10px;
 	background-color: var(--main-ui-front);
