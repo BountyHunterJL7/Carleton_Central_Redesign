@@ -55,6 +55,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
+	margin-bottom: 10%;
 }
 
 .footer {
