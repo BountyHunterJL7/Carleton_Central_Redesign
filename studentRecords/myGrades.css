@@ -1,127 +1,141 @@
-body{
-    font: normal 12pt arial !important;
-    color:black;
-    background-color:white;
+body {
+	font: normal 12pt arial !important;
+	color: black;
+	background-color: white;
 }
 
-#raven-logo{
-    width:30%;
+#raven-logo {
+	width: 30%;
 }
 
-.program{
-    background-Color:#f0f0f0;
-    padding-left: 3%;
-    padding-right:3%;
-    padding-top:7%;
-    padding-bottom:25%;
-    text-align:center;
-    width:18%;
-    float:left;
-    
+.program {
+	background-color: #f0f0f0;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 7%;
+	padding-bottom: 25%;
+	text-align: center;
+	width: 18%;
+	float: left;
 }
 
-.forms{
-    position: relative;
-    text-align: center;
+.forms {
+	position: relative;
+	text-align: center;
 }
 
-.linkBox{
-background-color: white;
-border-radius: 10pt;
-padding:4%;
-position: relative;
-box-shadow: 0px 0px 8px #b8b8b8;
+.grade-container table {
+	margin: auto;
 }
 
-.titleText{
-    text-align:center;
-    padding-top:8%;
-    padding-bottom:4%;
-    }
-    
-  /* Set a style for all buttons */
-  input[type=submit] {
+.linkBox {
+	background-color: white;
+	border-radius: 10pt;
+	padding: 4%;
+	position: relative;
+	box-shadow: 0px 0px 8px #b8b8b8;
+}
+
+.titleText {
+	text-align: center;
+	padding-top: 8%;
+	padding-bottom: 4%;
+}
+
+/* Set a style for all buttons */
+input[type='submit'] {
 	background-color: #e6e6e6;
 	color: black;
-    font-size: 10pt;
-    font-weight: bold;
+	font-size: 10pt;
+	font-weight: bold;
 	padding: 0.3% 1.5%;
 	border: none;
 	border-width: 1pt;
 	border-radius: 30pt;
 	cursor: pointer;
-    transition: 0.2s;
-    margin-top:1%;
+	transition: 0.2s;
+	margin-top: 1%;
 }
 
-	/* Add a hover effect for buttons */
-	input[type=submit]:hover {
-		background-color: rgb(202, 202, 202);		
-    }
+/* Add a hover effect for buttons */
+input[type='submit']:hover {
+	background-color: rgb(202, 202, 202);
+}
 
-    select::-ms-expand {	display: none; }
-    select { 
-        -webkit-appearance: none;
-        appearance: none; 
-        outline: 0; 
-        background: white; 
-        background-image: none; 
-        width: 10%; 
-        height: 100%; 
-        font-size:12pt;
-        color: black; 
-        cursor: pointer; 
-        border: none; 
-        border-bottom: 1pt solid rgb(119, 119, 119);
-        border-radius:3px;
-        border-width: 1pt;
-        border-radius: 0%;
-        
-        background-image: url("../media/selectMenuArrow.png");
-background-repeat: no-repeat, repeat;
-background-position: right 0.4em top 50%, 0 0;
-background-size: 5%;
-    } 
-    /*makes the little arrows on the default select invisibe*/
-    @-moz-document url-prefix(){
-        .ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
-      .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
-    }
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: 0;
+	background: white;
+	background-image: none;
+	width: 10%;
+	height: 100%;
+	font-size: 12pt;
+	color: black;
+	cursor: pointer;
+	border: none;
+	border-bottom: 1pt solid rgb(119, 119, 119);
+	border-radius: 3px;
+	border-width: 1pt;
+	border-radius: 0%;
 
+	background-image: url('../media/selectMenuArrow.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.4em top 50%, 0 0;
+	background-size: 5%;
+}
+/*makes the little arrows on the default select invisibe*/
+@-moz-document url-prefix() {
+	.ui-select {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+	}
+	.ui-select select {
+		width: 110%;
+		background-position: right 30px center !important;
+		border: none !important;
+	}
+}
 
-    .select { 
-        position: relative; 
-        display: block; 
-        width: 15em; 
-        height: 2em; 
-        line-height: 3; 
-        overflow: hidden; 
-        border-radius: .25em; 
-        padding-bottom:10px; 
-    } 
+.select {
+	position: relative;
+	display: block;
+	width: 15em;
+	height: 2em;
+	line-height: 3;
+	overflow: hidden;
+	border-radius: 0.25em;
+	padding-bottom: 10px;
+}
 
-.termSelect{
-        margin:3%;
-        padding-left:3%;
-        padding-top:5pt;
-        padding-bottom:5pt;
-        padding-right:3%;
-        appearance: none; 
-        outline: 0; 
-        background: white; 
-        background-image: none; 
-        width: 30%; 
-        height: 100%; 
-        font-size: 20;
-        color: black; 
-        cursor: pointer;
-        border-radius: 25%;
-        border: 1pt solid rgb(119, 119, 119); 
-        border-width: 1pt;
-         border-radius: 30pt;
+.termSelect {
+	margin: 3%;
+	padding-left: 3%;
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+	padding-right: 3%;
+	appearance: none;
+	outline: 0;
+	background: white;
+	background-image: none;
+	width: 30%;
+	height: 100%;
+	font-size: 20;
+	color: black;
+	cursor: pointer;
+	border-radius: 25%;
+	border: 1pt solid rgb(119, 119, 119);
+	border-width: 1pt;
+	border-radius: 30pt;
 
-         background-image: url("../media/selectMenuArrow.png");
-background-repeat: no-repeat, repeat;
-background-position: right 0.4em top 50%, 0 0;
-background-size: 5%;
+	background-image: url('../media/selectMenuArrow.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.4em top 50%, 0 0;
+	background-size: 5%;
 }
